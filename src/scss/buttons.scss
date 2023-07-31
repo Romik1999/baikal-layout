@@ -1,0 +1,64 @@
+@import "./colors";
+
+.btn {
+  font-family: Inter, sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  height: 60px;
+  padding: 12px;
+  box-sizing: border-box;
+  transition: 0.2s;
+  cursor: pointer;
+  width: 100%;
+
+  @media screen and (max-width: 1441px) {
+    font-size: 18px;
+    height: 55px;
+  }
+
+  @media screen and (max-width: 992px) {
+    font-size: 16px;
+    height: 50px;
+    padding: 10px;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &--yellow {
+    background: #FCA311;
+    border: 1px solid #FCA311;
+    color: $white;
+
+    & svg {
+      fill: $white;
+    }
+
+    &:hover {
+      background: transparent;
+      color: #FCA311;
+
+      & svg {
+        fill: $yellow;
+      }
+    }
+  }
+
+  &--blue{
+    background: $blue;
+    border: 1px solid $blue;
+    color: $white;
+
+    &:hover{
+      background: transparent;
+      color: $blue;
+    }
+  }
+}
