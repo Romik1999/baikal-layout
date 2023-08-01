@@ -1,0 +1,52 @@
+@import "../../scss/colors.scss";
+
+.search {
+  position: relative;
+
+  &__input {
+    width: 265px;
+    height: 45px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: rgba(46, 46, 46, 0.75);
+    box-shadow: -1px 0px 1px 0px rgba(244, 244, 244, 0.20) inset, -2px 2px 3px 0px rgba(0, 0, 0, 0.30) inset;
+    box-sizing: border-box;
+    padding-right: 54px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 13px;
+    border: none;
+
+    color: #F3F3F3;
+    font-size: 18px;
+    line-height: 120%;
+
+    &:focus{
+      outline: none;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    padding: 10px 18px;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+
+    & svg{
+      height: 18px;
+      width: 18px;
+      object-fit: contain;
+    }
+  }
+
+  @media screen and (max-width: 769px) {
+  }
+}

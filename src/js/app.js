@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     let burger = document.querySelector('.hamburger');
-    let mobile = document.querySelector('.header-menu');
+    let mobile = document.querySelector('.mega-block');
     burger.addEventListener('click', () => {
         if (burger.classList.contains('active')) {
             burger.classList.remove('active');
@@ -12,6 +12,23 @@ document.addEventListener('DOMContentLoaded', function () {
             document.body.style.overflow = "hidden";
         }
     });
+
+
+    let parentLinks = document.querySelectorAll('.mega-menu__item--parent .mega-menu__link')
+    if (parentLinks){
+        parentLinks.forEach(parentLink=>{
+            parentLink.addEventListener('click', (e)=>{
+                e.preventDefault()
+                parentLink.classList.add('active')
+                let maxHeight = parentLink.parentNode.querySelector('.mega-menu__subitems').clientHeight
+                let activeSubmenu = parentLink.parentNode.parentNode.querySelector('.mega-menu__submenu')
+                console.log(activeSubmenu);
+                activeSubmenu.style.maxHeight = `${maxHeight}px`
+                console.log(maxHeight);
+            })
+        })
+    }
+
 
     let faqsTop = document.querySelectorAll('.faq-item__top');
     if (faqsTop) {

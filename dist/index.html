@@ -1,9 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Байкальский завод маталлоконструкций</title>
+</head>
+<body>
+
 <header class="header">
     <div class="cont">
         <div class="header__wrapper">
             <div class="header-top">
                 <div class="header-top__hamburger">
-                    @@include('hamburger/hamburger.html')
+                    <div class="hamburger">
+  <span class="hamburger__line"></span>
+  <span class="hamburger__line"></span>
+  <span class="hamburger__line"></span>
+</div>
+
                 </div>
                 <a class="header-top__email" href="mailto:bss15@list.ru">
                     <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -27,7 +44,15 @@
                     8 (924) 993-81-04 (отдел продаж)
                 </a>
                 <div class="header-top__search">
-                    @@include('search/search.html')
+                    <form class="search">
+    <input class="search__input">
+    <button class="search__button">
+        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.31414 13.503C8.12687 13.503 8.93165 13.3429 9.68252 13.0319C10.4334 12.7209 11.1157 12.265 11.6903 11.6903C12.265 11.1157 12.7209 10.4334 13.0319 9.68252C13.3429 8.93165 13.503 8.12687 13.503 7.31414C13.503 6.5014 13.3429 5.69662 13.0319 4.94575C12.7209 4.19488 12.265 3.51263 11.6903 2.93793C11.1157 2.36324 10.4334 1.90737 9.68252 1.59635C8.93165 1.28533 8.12687 1.12525 7.31414 1.12525C5.67274 1.12525 4.09858 1.77729 2.93793 2.93793C1.77729 4.09858 1.12525 5.67274 1.12525 7.31414C1.12525 8.95553 1.77729 10.5297 2.93793 11.6903C4.09858 12.851 5.67274 13.503 7.31414 13.503ZM14.6283 7.31414C14.6283 9.25397 13.8577 11.1143 12.486 12.486C11.1143 13.8577 9.25397 14.6283 7.31414 14.6283C5.37431 14.6283 3.51393 13.8577 2.14226 12.486C0.770594 11.1143 0 9.25397 0 7.31414C0 5.37431 0.770594 3.51393 2.14226 2.14226C3.51393 0.770594 5.37431 0 7.31414 0C9.25397 0 11.1143 0.770594 12.486 2.14226C13.8577 3.51393 14.6283 5.37431 14.6283 7.31414Z" fill="#F3F3F3"/>
+            <path d="M11.6396 13.2129C11.6734 13.2579 11.7094 13.3007 11.7499 13.3423L16.0821 17.6745C16.2931 17.8857 16.5794 18.0043 16.8779 18.0044C17.1764 18.0046 17.4627 17.8861 17.6738 17.6751C17.885 17.4641 18.0036 17.1779 18.0037 16.8794C18.0038 16.5809 17.8854 16.2946 17.6744 16.0834L13.3422 11.7512C13.3019 11.7105 13.2587 11.6729 13.2128 11.6387C12.7713 12.2405 12.2409 12.7717 11.6396 13.214V13.2129Z" fill="#F3F3F3"/>
+        </svg>
+    </button>
+</form>
                 </div>
                 <div class="header-top__trigger">
                     <div class="trigger">
@@ -65,4 +90,73 @@
     </div>
 </header>
 
-@@include('mega-block/mega-block.html')
+<div class="mega-block active">
+    <div class="mega-block__menu">
+        <nav class="mega-menu">
+            <ul class="mega-menu__items">
+                <li class="mega-menu__item"><a class="mega-menu__link" href="#">Программа управления производством</a></li>
+                <li class="mega-menu__item"><a class="mega-menu__link" href="#">конкурентные преимущества</a></li>
+                <li class="mega-menu__item"><a class="mega-menu__link" href="#">О заводе</a></li>
+                <li class="mega-menu__item mega-menu__item--parent">
+                    <a class="mega-menu__link" href="#">
+                        <span>Продукция</span>
+                        <div class="mega-menu__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="11" viewBox="0 0 17 11" fill="none">
+                                <path d="M1 1L8.50889 10L16.0178 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </a>
+                    <div class="mega-menu__submenu weqweqwer">
+                        <ul class="mega-menu__subitems">
+                            <li class="mega-menu__subitem"><a class="mega-menu__sublink" href="#">строительные работы</a></li>
+                            <li class="mega-menu__subitem"><a class="mega-menu__sublink" href="#">разработка кмд и запуск заказа в работу</a></li>
+                            <li class="mega-menu__subitem"><a class="mega-menu__sublink" href="#">Производство заготовок</a></li>
+                            <li class="mega-menu__subitem"><a class="mega-menu__sublink" href="#">Сборка и сварка</a></li>
+                            <li class="mega-menu__subitem"><a class="mega-menu__sublink" href="#">Покраска, огнезащитная обработка</a></li>
+                            <li class="mega-menu__subitem"><a class="mega-menu__sublink" href="#">Маркировка и упаковка</a></li>
+                            <li class="mega-menu__subitem"><a class="mega-menu__sublink" href="#">Доставка</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="mega-menu__item"><a class="mega-menu__link" href="#">отк и лаборатория неразрушающего контроля</a></li>
+                <li class="mega-menu__item mega-menu__item--parent">
+                    <a class="mega-menu__link" href="#">
+                        <span>услуги</span>
+                        <div class="mega-menu__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="11" viewBox="0 0 17 11" fill="none">
+                                <path d="M1 1L8.50889 10L16.0178 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </a>
+                    <div class="mega-menu__submenu">
+                        <ul class="mega-menu__subitems">
+                            <li class="mega-menu__subitem"><a class="mega-menu__sublink" href="#">строительные работы</a></li>
+                            <li class="mega-menu__subitem"><a class="mega-menu__sublink" href="#">разработка кмд и запуск заказа в работу</a></li>
+                            <li class="mega-menu__subitem"><a class="mega-menu__sublink" href="#">Производство заготовок</a></li>
+                            <li class="mega-menu__subitem"><a class="mega-menu__sublink" href="#">Сборка и сварка</a></li>
+                            <li class="mega-menu__subitem"><a class="mega-menu__sublink" href="#">Покраска, огнезащитная обработка</a></li>
+                            <li class="mega-menu__subitem"><a class="mega-menu__sublink" href="#">Маркировка и упаковка</a></li>
+                            <li class="mega-menu__subitem"><a class="mega-menu__sublink" href="#">Доставка</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="mega-menu__item"><a class="mega-menu__link" href="#">цена</a></li>
+                <li class="mega-menu__item"><a class="mega-menu__link" href="#">техническая документация</a></li>
+                <li class="mega-menu__item"><a class="mega-menu__link" href="#">реализованные объекты</a></li>
+                <li class="mega-menu__item"><a class="mega-menu__link" href="#">Отзывы заказчиков</a></li>
+                <li class="mega-menu__item"><a class="mega-menu__link" href="#">Контакты и реквизиты</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<main>
+
+</main>
+
+
+<script src="libs/swiper/swiper-bundle.min.js"></script>
+<script src="js/app.min.js"></script>
+
+</body>
+</html>
