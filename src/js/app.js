@@ -15,18 +15,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     let parentLinks = document.querySelectorAll('.mega-menu__item--parent .mega-menu__link')
-    if (parentLinks){
-        parentLinks.forEach(parentLink=>{
-            parentLink.addEventListener('click', (e)=>{
-                e.preventDefault()
-                parentLink.classList.add('active')
-                let maxHeight = parentLink.parentNode.querySelector('.mega-menu__subitems').clientHeight
-                let activeSubmenu = parentLink.parentNode.parentNode.querySelector('.mega-menu__submenu')
-                console.log(activeSubmenu);
+    if (parentLinks) {
+        for (let i = 0; i < parentLinks.length; i++) {
+            parentLinks[i].addEventListener('click', function () {
+                let activeParentLink = document.querySelector('.mega-menu__item--parent .mega-menu__link.active')
+                if (activeParentLink){
+                    activeParentLink.classList.remove('active')
+                    activeParentLink.nextElementSibling.style.maxHeight = `0px`
+                }
+                this.classList.add('active');
+                let maxHeight = this.nextElementSibling.querySelector('.mega-menu__subitems').clientHeight
+                let activeSubmenu = this.nextElementSibling
                 activeSubmenu.style.maxHeight = `${maxHeight}px`
-                console.log(maxHeight);
             })
-        })
+        }
     }
 
 
@@ -37,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 let text = faqTop.parentNode.parentNode.querySelector('.faq-item__bottom')
                 let height = faqTop.parentNode.parentNode.querySelector('.faq-item__text').clientHeight
 
-                if (faqTop.classList.contains('active')){
+                if (faqTop.classList.contains('active')) {
                     faqTop.classList.remove('active');
                     console.log(height);
                     text.style.maxHeight = `0px`;
