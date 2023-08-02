@@ -343,6 +343,8 @@ main {
   z-index: 10;
   transform: translateX(-105%);
   transition: 0.3s;
+  max-width: 36vw;
+  width: 100%;
 }
 .mega-block.active {
   transform: translateX(0);
@@ -376,6 +378,15 @@ main {
   justify-content: space-between;
   column-gap: 30px;
   padding: 9px 0;
+}
+.mega-menu__link.active .mega-menu__icon svg {
+  transform: rotate(180deg);
+}
+.mega-menu__icon {
+  display: flex;
+}
+.mega-menu__icon svg {
+  transition: 0.2s;
 }
 .mega-menu__submenu {
   overflow: hidden;
