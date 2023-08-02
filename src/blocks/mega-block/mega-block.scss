@@ -13,6 +13,7 @@
   transition: 0.3s;
   max-width: 36vw;
   width: 100%;
+  overflow: hidden;
 
   &.active {
     transform: translateX(0);
@@ -54,8 +55,37 @@
     justify-content: space-between;
     column-gap: 30px;
     padding: 9px 0;
+    transition: 0.2s;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 100%;
+      left: -75px;
+      top: 0;
+      background: linear-gradient(225deg, #1B1B1B 0%, #FFF 100%);
+      transition: 0.3s;
+      display: block;
+      z-index: -1;
+    }
+
+    &:hover {
+      color: #020202;
+
+      &:after {
+        width: 100vw;
+      }
+    }
 
     &.active {
+      color: #020202;
+
+      &:after {
+        width: 100vw;
+      }
+
       & .mega-menu__icon {
         & svg {
           transform: rotate(180deg);

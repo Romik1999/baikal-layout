@@ -1,49 +1,158 @@
 @import "../../scss/colors.scss";
 
-.hamburger {
-  position: relative;
-  width: 54px;
-  height: 40px;
-  cursor: pointer;
-  transition: 0.2s;
+.hero {
+  padding: 30px;
+  padding-bottom: 0;
+  height: 100%;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  box-sizing: border-box;
 
-  &__line {
-    position: absolute;
-    left: 0;
+  &:before {
+    content: '';
+    display: block;
+    max-width: 55vw;
+    max-height: 55vw;
+    height: 100%;
     width: 100%;
-    height: 5px;
-    transition: 0.2s;
-    border-radius: 5px;
-    background-color: #F3F3F3;
+    position: absolute;
+    bottom: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #F9F9F9;
+    filter: blur(650px);
+    z-index: -1;
+  }
 
-    &:nth-child(1) {
-      top: 0;
-    }
+  & .cont {
+    height: 100%;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+  }
 
-    &:nth-child(2) {
-      top: calc(50% - 2.5px);
-    }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    flex: 1 1 auto;
+    height: 100%;
+  }
 
-    &:nth-child(3) {
-      bottom: 0;
+  &-title {
+    &__letter {
+      position: relative;
+      & span{
+        &:nth-child(1){
+          text-shadow: -8.564509391784668px -8.564509391784668px 42.82254409790039px 0px rgba(28, 28, 28, 0.80);
+          font-family: CodePro, sans-serif;
+          font-size: 124.939px;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: -2.499px;
+          text-transform: uppercase;
+          position: relative;
+          z-index: 1;
+
+          background: linear-gradient(180deg, #222 0%, #070707 100%);
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        &:nth-child(2){
+          text-shadow: -5.138705730438232px 12.846763610839844px 21.411272048950195px 0px rgba(28, 28, 28, 0.60), -12.846763610839844px 1.7129019498825073px 3.4258038997650146px 0px rgba(28, 28, 28, 0.90), -25.693527221679688px 2.569352865219116px 17.129018783569336px 0px rgba(28, 28, 28, 0.70);
+          font-family: CodePro, sans-serif;
+          font-size: 124.939px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          letter-spacing: -2.499px;
+          text-transform: uppercase;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 2;
+
+          background: linear-gradient(180deg, #EBEBEB 0%, #FFF 100%);
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        &:nth-child(3){
+          font-family: CodePro, sans-serif;
+          font-size: 124.939px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          letter-spacing: -2.499px;
+          text-transform: uppercase;
+
+          position: absolute;
+          top: 100%;
+          left: 0;
+          z-index: 2;
+          transform: rotate(180deg);
+
+          background: linear-gradient(180deg, rgba(226, 226, 226, 0.00) 0%, rgba(200, 200, 200, 0.35) 100%);
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
     }
   }
 
-  &.active {
-    & .hamburger__line {
-      &:nth-child(2) {
-        opacity: 0;
-      }
+  &__links {
+    margin-top: auto;
+    margin-bottom: 0;
+  }
 
-      &:nth-child(1) {
-        transform: rotate(-45deg);
-        top: 50%;
-      }
+  &-links {
+    &__items {
+      padding: 0;
+      display: flex;
+      max-width: 1460px;
+      width: 100%;
+      margin: 0 auto;
+      list-style: none;
+    }
 
-      &:nth-child(3) {
-        top: 50%;
-        transform: rotate(45deg);
-        bottom: auto;
+    &__item {
+      width: 25%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      padding: 36px 0;
+
+      &:not(:last-child) {
+        &:after {
+          content: '';
+          position: absolute;
+          right: 0;
+          top: 0;
+          height: 100%;
+          width: 2px;
+          background: linear-gradient(270deg, rgba(243, 243, 243, 0.00) 0%, rgba(243, 243, 243, 0.65) 31.77%, #F3F3F3 49.62%, rgba(243, 243, 243, 0.60) 67.71%, rgba(243, 243, 243, 0.00) 100%);
+        }
+      }
+    }
+
+    &__link {
+      color: #F3F3F3;
+      font-size: 20px;
+      line-height: 120%;
+      text-transform: uppercase;
+      text-decoration: none;
+      cursor: pointer;
+      transition: 0.2S;
+      max-width: 280px;
+      width: 100%;
+      display: flex;
+
+      &:hover {
+
       }
     }
   }
