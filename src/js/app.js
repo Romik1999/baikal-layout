@@ -1,17 +1,36 @@
 document.addEventListener('DOMContentLoaded', function () {
-    let burger = document.querySelector('.hamburger');
-    let mobile = document.querySelector('.mega-block');
-    burger.addEventListener('click', () => {
-        if (burger.classList.contains('active')) {
-            burger.classList.remove('active');
-            mobile.classList.remove('active');
-            document.body.style.overflow = "visible";
-        } else {
-            burger.classList.add('active');
-            mobile.classList.add('active');
-            document.body.style.overflow = "hidden";
-        }
-    });
+    let burgers = document.querySelectorAll('.hamburger');
+    let menu = document.querySelector('.mega-block');
+
+    burgers.forEach(burger => {
+        burger.addEventListener('click', () => {
+            if (burger.classList.contains('active')) {
+                burger.classList.remove('active');
+                menu.classList.remove('active');
+                document.body.style.overflow = "visible";
+            } else {
+                burger.classList.add('active');
+                menu.classList.add('active');
+                document.body.style.overflow = "hidden";
+            }
+        })
+    })
+
+    let trigger = document.querySelector('.trigger');
+    let mobileMenu = document.querySelector('.header-bottom');
+    if (trigger) {
+        trigger.addEventListener('click', () => {
+            if (trigger.classList.contains('active')) {
+                trigger.classList.remove('active');
+                mobileMenu.classList.remove('active');
+                document.body.style.overflow = "visible";
+            } else {
+                trigger.classList.add('active');
+                mobileMenu.classList.add('active');
+                document.body.style.overflow = "hidden";
+            }
+        })
+    }
 
 
     let parentLinks = document.querySelectorAll('.mega-menu__item--parent .mega-menu__link')
@@ -19,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
         for (let i = 0; i < parentLinks.length; i++) {
             parentLinks[i].addEventListener('click', function () {
                 let activeParentLink = document.querySelector('.mega-menu__item--parent .mega-menu__link.active')
-                if (activeParentLink){
+                if (activeParentLink) {
                     activeParentLink.classList.remove('active')
                     activeParentLink.nextElementSibling.style.maxHeight = `0px`
                 }

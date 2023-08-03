@@ -1,0 +1,29 @@
+@import "../../scss/colors.scss";
+
+.close {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: 0.2s;
+  z-index: 12;
+
+  &__line {
+    left: 0;
+    width: 100%;
+    height: 3px;
+    border-radius: 3px;
+    background: $white;
+
+    &:nth-child(1) {
+      transform: rotate(-45deg);
+      top: 50%;
+    }
+
+    &:nth-child(2) {
+      top: 50%;
+      transform: rotate(45deg);
+    }
+  }
+}
+

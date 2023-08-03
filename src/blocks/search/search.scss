@@ -2,6 +2,7 @@
 
 .search {
   position: relative;
+  width: 100%;
 
   &__input {
     width: 265px;
@@ -21,7 +22,32 @@
     font-size: 18px;
     line-height: 120%;
 
-    &:focus{
+    @media screen and (max-width: 1441px) {
+      font-size: 16px;
+      height: 40px;
+      width: 250px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 10px;
+      padding-right: 40px;
+    }
+    @media screen and (max-width: 1275px) {
+      font-size: 14px;
+      width: 230px;
+      height: 35px;
+      padding-right: 35px;
+    }
+    @media screen and (max-width: 1110px) {
+      width: 205px;
+      height: 30px;
+      padding-right: 30px;
+      font-size: 13px;
+    }
+    @media screen and (max-width: 992px) {
+      width: 100%;
+    }
+
+    &:focus {
       outline: none;
     }
   }
@@ -40,7 +66,19 @@
     justify-content: center;
     width: 60px;
 
-    & svg{
+    @media screen and (max-width: 1441px) {
+      width: 40px;
+      padding: 5px;
+    }
+    @media screen and (max-width: 1275px) {
+      width: 35px;
+      padding: 5px;
+    }
+    @media screen and (max-width: 1110px) {
+      width: 30px;
+    }
+
+    & svg {
       height: 18px;
       width: 18px;
       object-fit: contain;

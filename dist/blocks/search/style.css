@@ -1,5 +1,6 @@
 .search {
   position: relative;
+  width: 100%;
 }
 
 .search__input {
@@ -54,4 +55,54 @@
   width: 18px;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+@media screen and (max-width: 1441px) {
+  .search__input {
+    font-size: 16px;
+    height: 40px;
+    width: 250px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 40px;
+  }
+
+  .search__button {
+    width: 40px;
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 1275px) {
+  .search__input {
+    font-size: 14px;
+    width: 230px;
+    height: 35px;
+    padding-right: 35px;
+  }
+
+  .search__button {
+    width: 35px;
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 1110px) {
+  .search__input {
+    width: 205px;
+    height: 30px;
+    padding-right: 30px;
+    font-size: 13px;
+  }
+
+  .search__button {
+    width: 30px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .search__input {
+    width: 100%;
+  }
 }
