@@ -1,19 +1,44 @@
 document.addEventListener('DOMContentLoaded', function () {
+
+    console.log(window.innerWidth);
+
+    if (window.innerWidth > 1920) {
+        let burger = document.querySelector('.hamburger');
+        let megaLinks = document.querySelectorAll('.mega-menu__link');
+        let megaSubLinks = document.querySelectorAll('.mega-menu__subitems');
+        let megaClose = document.querySelector('.mega-block__close');
+        let offsetLeft = burger.getBoundingClientRect()
+        if (megaLinks) {
+            megaLinks.forEach(megaLink => {
+                megaLink.style.paddingLeft = `${offsetLeft.left}px`;
+            })
+            megaClose.style.paddingLeft = `${offsetLeft.left}px`;
+            megaSubLinks.forEach(megaSubLink => {
+                let offset = offsetLeft.left + 20
+                megaSubLink.style.paddingLeft = `${offset}px`;
+            })
+        }
+    }
+
     let burgers = document.querySelectorAll('.hamburger');
     let menu = document.querySelector('.mega-block');
     let close = document.querySelector('.close');
 
-    burgers.forEach(burger => {
-        burger.addEventListener('click', () => {
-            menu.classList.add('active');
-            document.body.style.overflow = "hidden";
+    if (burgers) {
+        burgers.forEach(burger => {
+            burger.addEventListener('click', () => {
+                menu.classList.add('active');
+                document.body.style.overflow = "hidden";
+            })
         })
-    })
+    }
 
-    close.addEventListener('click', () => {
-        menu.classList.remove('active');
-        document.body.style.overflow = "visible";
-    })
+    if (close) {
+        close.addEventListener('click', () => {
+            menu.classList.remove('active');
+            document.body.style.overflow = "visible";
+        })
+    }
 
 
     let trigger = document.querySelector('.trigger');

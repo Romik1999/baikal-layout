@@ -1,1 +1,35 @@
-@font-face{font-family:Helvetica;font-display:swap;src:url(../fonts/helvetica_regular.woff2) format("woff2"),url(../fonts/helvetica_regular.woff) format("woff");font-weight:400;font-style:normal}@font-face{font-family:Helvetica;font-display:swap;src:url(../fonts/helvetica_light.woff2) format("woff2"),url(../fonts/helvetica_light.woff) format("woff");font-weight:300;font-style:normal}@font-face{font-family:Helvetica;font-display:swap;src:url(../fonts/helvetica_bold.woff2) format("woff2"),url(../fonts/helvetica_bold.woff) format("woff");font-weight:700;font-style:normal}@font-face{font-family:SourceCodePro;font-display:swap;src:url(../fonts/SourceCodePro-Bold.woff2) format("woff2"),url(../fonts/SourceCodePro-Bold.woff) format("woff");font-weight:700;font-style:normal}@font-face{font-family:CodePro;font-display:swap;src:url(../fonts/Code-Pro-Bold.woff2) format("woff2"),url(../fonts/Code-Pro-Bold.woff) format("woff");font-weight:700;font-style:normal}
+@font-face {
+  font-family: Helvetica;
+  font-display: swap;
+  src: url("../fonts/helvetica_regular.woff2") format("woff2"), url("../fonts/helvetica_regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Helvetica;
+  font-display: swap;
+  src: url("../fonts/helvetica_light.woff2") format("woff2"), url("../fonts/helvetica_light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: Helvetica;
+  font-display: swap;
+  src: url("../fonts/helvetica_bold.woff2") format("woff2"), url("../fonts/helvetica_bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: SourceCodePro;
+  font-display: swap;
+  src: url("../fonts/SourceCodePro-Bold.woff2") format("woff2"), url("../fonts/SourceCodePro-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: CodePro;
+  font-display: swap;
+  src: url("../fonts/Code-Pro-Bold.woff2") format("woff2"), url("../fonts/Code-Pro-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}

@@ -11,8 +11,7 @@
   z-index: 10;
   transform: translateX(-105%);
   transition: 0.3s;
-  max-width: 36vw;
-  width: 100%;
+  width: auto;
   overflow: hidden;
 
   &.active {
@@ -20,23 +19,52 @@
   }
 
   &__wrapper {
-    max-width: 700px;
     width: 100%;
     padding: 60px 0;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     row-gap: 80px;
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+      width: 8px; /* ширина всей полосы прокрутки */
+    }
+
+    &::-webkit-scrollbar-track {
+      background: var(--unnamed, linear-gradient(225deg, #000 0%, #222 100%));
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background: #2F2F2F;
+      cursor: pointer;
+    }
+
+    @media screen and (max-width: 1441px) {
+      padding: 50px 0;
+      row-gap: 60px;
+    }
+    @media screen and (max-width: 1275px) {
+      padding: 38px 0;
+      row-gap: 50px;
+    }
+    @media screen and (max-width: 1110px) {
+      padding: 26px 0;
+      row-gap: 40px;
+    }
   }
 
   &__close {
     padding-left: 75px;
+
+    @media screen and (max-width: 1441px) {
+      padding-left: 30px;
+    }
   }
 
   &__menu {
-  }
 
-  @media screen and (max-width: 769px) {
   }
 }
 
@@ -62,11 +90,17 @@
     justify-content: space-between;
     column-gap: 30px;
     padding-top: 9px;
-    padding-left: 75px;
-    padding-right: 20px;
+    padding-right: 45px;
     padding-bottom: 9px;
     transition: 0.2s;
     position: relative;
+
+    @media screen and (max-width: 1441px) {
+      font-size: 16px;
+    }
+    @media screen and (max-width: 1275px) {
+      font-size: 14px;
+    }
 
     &:after {
       content: '';
@@ -93,7 +127,7 @@
       color: #020202;
 
       &:after {
-        width: 100vw;
+        width: 100%;
       }
 
       & .mega-menu__icon {
@@ -106,6 +140,9 @@
 
   &__icon {
     display: flex;
+    position: absolute;
+    top: calc(50% - 5.5px);
+    right: 20px;
 
     & svg {
       transition: 0.2s;
@@ -141,5 +178,12 @@
     line-height: 120%;
     text-transform: uppercase;
     text-decoration: none;
+
+    @media screen and (max-width: 1441px) {
+      font-size: 16px;
+    }
+    @media screen and (max-width: 1275px) {
+      font-size: 14px;
+    }
   }
 }
