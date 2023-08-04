@@ -1,20 +1,20 @@
 document.addEventListener('DOMContentLoaded', function () {
     let burgers = document.querySelectorAll('.hamburger');
     let menu = document.querySelector('.mega-block');
+    let close = document.querySelector('.close');
 
     burgers.forEach(burger => {
         burger.addEventListener('click', () => {
-            if (burger.classList.contains('active')) {
-                burger.classList.remove('active');
-                menu.classList.remove('active');
-                document.body.style.overflow = "visible";
-            } else {
-                burger.classList.add('active');
-                menu.classList.add('active');
-                document.body.style.overflow = "hidden";
-            }
+            menu.classList.add('active');
+            document.body.style.overflow = "hidden";
         })
     })
+
+    close.addEventListener('click', () => {
+        menu.classList.remove('active');
+        document.body.style.overflow = "visible";
+    })
+
 
     let trigger = document.querySelector('.trigger');
     let mobileMenu = document.querySelector('.header-bottom');
