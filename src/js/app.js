@@ -1,6 +1,23 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    console.log(window.innerWidth);
+    let scrollpos = window.scrollY
+    const header = document.querySelector(".header")
+    const mobHeader = document.querySelector(".header-mob")
+    const scrollChange = 50
+
+    window.addEventListener('scroll', function () {
+        scrollpos = window.scrollY;
+
+        if (scrollpos >= scrollChange) {
+            header.classList.add("bg-dark")
+            mobHeader.classList.add("bg-dark")
+        } else {
+            header.classList.remove("bg-dark")
+            mobHeader.classList.remove("bg-dark")
+        }
+
+    })
+
 
     if (window.innerWidth > 1920) {
         let burger = document.querySelector('.hamburger');

@@ -7,6 +7,10 @@
   top: 0;
   z-index: 10;
 
+  &.bg-dark{
+    background: var(--unnamed, #222);
+  }
+
   @media screen and (max-width: 992px) {
     display: none;
   }
@@ -277,12 +281,17 @@
   box-sizing: border-box;
   display: none;
   background: linear-gradient(225deg, rgba(39, 39, 39, 0.00) 0%, #272727 100%);
+  z-index: 12;
 
   @media screen and (max-width: 992px) {
     display: flex;
   }
   @media screen and (max-width: 330px) {
     padding: 0 10px;
+  }
+
+  &.bg-dark{
+    background: var(--unnamed, #222);
   }
 
   &__wrapper {

@@ -5,6 +5,9 @@
   top: 0;
   z-index: 10;
 }
+.header.bg-dark {
+  background: var(--unnamed, #222);
+}
 @media screen and (max-width: 992px) {
   .header {
     display: none;
@@ -289,6 +292,7 @@
   box-sizing: border-box;
   display: none;
   background: linear-gradient(225deg, rgba(39, 39, 39, 0) 0%, #272727 100%);
+  z-index: 12;
 }
 @media screen and (max-width: 992px) {
   .header-mob {
@@ -299,6 +303,9 @@
   .header-mob {
     padding: 0 10px;
   }
+}
+.header-mob.bg-dark {
+  background: var(--unnamed, #222);
 }
 .header-mob__wrapper {
   padding: 15px 0;
