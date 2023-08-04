@@ -17,6 +17,9 @@
   -webkit-column-gap: 60px;
      -moz-column-gap: 60px;
           column-gap: 60px;
+  padding-right: 110px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .header__content {
@@ -232,11 +235,18 @@
   max-width: 110px;
 }
 
+@media screen and (max-width: 1600px) {
+  .header__wrapper {
+    padding-right: 50px;
+  }
+}
+
 @media screen and (max-width: 1441px) {
   .header__wrapper {
     -webkit-column-gap: 30px;
        -moz-column-gap: 30px;
             column-gap: 30px;
+    padding-right: 0;
   }
 
   .header-top {

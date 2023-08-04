@@ -13,7 +13,8 @@
   width: 100%;
   height: 3px;
   border-radius: 3px;
-  background: #ffffff;
+  background: #A7A7A7;
+  position: absolute;
 }
 
 .close__line:nth-child(1) {
