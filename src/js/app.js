@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-
     let scrollpos = window.scrollY
     const header = document.querySelector(".header")
     const mobHeader = document.querySelector(".header-mob")
@@ -163,4 +162,10 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     modal('.modal', 'modal--active', '[data-modal]', '.modal__close');
+    // появление модалки вынести в отдельный файл который будет подклбючаться только на главной странице
+    // if (modal){
+    //     setTimeout(()=>{
+    //         document.querySelector('.modal').classList.add('modal--active')
+    //     }, 5000)
+    // }
 });
