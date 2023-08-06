@@ -18,27 +18,29 @@ document.addEventListener('DOMContentLoaded', function () {
     })
 
 
-    if (window.innerWidth > 1920) {
+    if (window.innerWidth > 992) {
         let burger = document.querySelector('.hamburger');
         let megaLinks = document.querySelectorAll('.mega-menu__link');
         let megaSubLinks = document.querySelectorAll('.mega-menu__subitems');
         let megaClose = document.querySelector('.mega-block__close');
-        let offsetLeft = burger.getBoundingClientRect()
+        let offsetLeft = burger.getBoundingClientRect().left
+        let burgerWidth = burger.clientWidth
+
         if (megaLinks) {
+            offsetLeft = offsetLeft + (burgerWidth / 3)
             megaLinks.forEach(megaLink => {
-                megaLink.style.paddingLeft = `${offsetLeft.left}px`;
+                megaLink.style.paddingLeft = `${offsetLeft}px`;
             })
-            megaClose.style.paddingLeft = `${offsetLeft.left}px`;
+            megaClose.style.paddingLeft = `${offsetLeft}px`;
             megaSubLinks.forEach(megaSubLink => {
-                let offset = offsetLeft.left + 20
-                megaSubLink.style.paddingLeft = `${offset}px`;
+                megaSubLink.style.paddingLeft = `${offsetLeft + 20}px`;
             })
         }
     }
 
     let burgers = document.querySelectorAll('.hamburger');
     let menu = document.querySelector('.mega-block');
-    let close = document.querySelector('.close');
+    let closeMega = document.querySelector('.mega-block .close');
 
     if (burgers) {
         burgers.forEach(burger => {
@@ -49,8 +51,8 @@ document.addEventListener('DOMContentLoaded', function () {
         })
     }
 
-    if (close) {
-        close.addEventListener('click', () => {
+    if (closeMega) {
+        closeMega.addEventListener('click', () => {
             menu.classList.remove('active');
             document.body.style.overflow = "visible";
         })
@@ -58,18 +60,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     let trigger = document.querySelector('.trigger');
-    let mobileMenu = document.querySelector('.header-bottom');
+    let mobileMenu = document.querySelector('.mobile');
+    let closeMenu = document.querySelector('.mobile .close');
+
     if (trigger) {
         trigger.addEventListener('click', () => {
-            if (trigger.classList.contains('active')) {
-                trigger.classList.remove('active');
-                mobileMenu.classList.remove('active');
-                document.body.style.overflow = "visible";
-            } else {
-                trigger.classList.add('active');
-                mobileMenu.classList.add('active');
-                document.body.style.overflow = "hidden";
-            }
+            mobileMenu.classList.add('active');
+            document.body.style.overflow = "hidden";
+        })
+    }
+    if (closeMenu) {
+        closeMenu.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+            document.body.style.overflow = "visible";
         })
     }
 

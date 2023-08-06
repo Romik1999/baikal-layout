@@ -292,7 +292,7 @@
   box-sizing: border-box;
   display: none;
   background: linear-gradient(225deg, rgba(39, 39, 39, 0) 0%, #272727 100%);
-  z-index: 12;
+  z-index: 9;
 }
 @media screen and (max-width: 992px) {
   .header-mob {
