@@ -15,19 +15,92 @@
 
 <main class="main">
     <section class="page">
-        @@include('page-title/page-title.html', {
-        pageTitleClass:'page__title',
-        pageTitleText: 'Программа управления производством'
-        })
-        <div class="page__text"></div>
-        <div class="page__images">
-            <img src="./img/production-management-program/production-management-program-1.png" alt="1">
-            <img src="./img/production-management-program/production-management-program-2.png" alt="2">
+        <div class="page__content">
+            @@include('page-title/page-title.html', {
+            pageTitleClass:'page__title',
+            pageTitleText: 'Программа управления производством'
+            })
+            <div class="page__section">
+                <p class="page__text">
+                    Собственно-разработанная программа управлением производством помогает контролировать и
+                    координировать
+                    все
+                    этапы создания заказа не только заводу-изготовителю, но и Заказчику
+                </p>
+                <div class="page__images page__images--cols page__images--cols-2">
+                    <img src="./img/production-management-program/production-management-program-1.png" alt="1">
+                    <img src="./img/production-management-program/production-management-program-2.png" alt="2">
+                </div>
+                <p class="page__text">
+                    Собственно-разработанная программа управлением производством помогает контролировать и
+                    координировать
+                    все
+                    этапы создания заказа не только заводу-изготовителю, но и Заказчику
+                </p>
+            </div>
+            <div class="page__section">
+                @@include('section-title/section-title.html', {
+                sectionTitleClass:'',
+                sectionTitleText: 'какую информацию будет видеть заказчик'
+                })
+                <p class="page__text">
+                    - Процент разработки чертежей КМД
+                    - Вес и габариты каждой отправочной марки
+                    - Что будет входить в одну фазу и срок её поставки
+                    - Отчёт о состоянии каждой марки (на этапе: заготовки, сборки, сварки, покраски, упаковки и
+                    отгрузки)
+                </p>
+                <div class="page__video">
+
+                </div>
+            </div>
+            <div class="page__section">
+                @@include('section-title/section-title.html', {
+                sectionTitleClass:'',
+                sectionTitleText: 'этапы работы программы управления производством'
+                })
+                <div class="page__list">
+                    <ul>
+                        <li>
+                            <span>Чертежи КМД разрабатываются в Tekla Structures, изначально учитывая специфику запуска заказа в работу</span>
+                            <img src="./img/production-management-program/arrow.svg" alt="arrow">
+                        </li>
+                        <li>
+                            <span>С Tekla Structures файлы выгружаются в собственно-созданную программу, которая регулирует запуск в работу и отгрузку готовых металлоконструкций, отслеживая и управляя всеми стадиями изготовления</span>
+                            <img src="./img/production-management-program/arrow.svg" alt="arrow">
+                        </li>
+                        <li>
+                            <span>Программа автоматически разбивает все металлоконструкции на отдельные марки пофазно, учитывая последовательность и сроки монтажа</span>
+                            <img src="./img/production-management-program/arrow.svg" alt="arrow">
+                        </li>
+                        <li>
+                            <span>Программа распознаёт марку стали и количество металлопроката, используемого для изготовления каждой марки. После чего металлопрокат автоматически подаётся со склада в цех</span>
+                            <img src="./img/production-management-program/arrow.svg" alt="arrow">
+                        </li>
+                        <li>
+                            <span>Программа самостоятельно распознаёт каждую технологическую операцию, формирует задание на заготовительные участки и наряды на сборо-сварочные, покрасочные, упаковочные и отгрузочные работы</span>
+                            <img src="./img/production-management-program/arrow.svg" alt="arrow">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page__section">
+                @@include('section-title/section-title.html', {
+                sectionTitleClass:'',
+                sectionTitleText: 'ПРИ ОТГРУЗКЕ ГОТОВЫХ МЕТАЛЛОКОНСТРУКЦИЙ ПРОГРАММА АВТОМАТИЧЕСКИ ФОРМИРУЕТ ПАКЕТ ДОКУМЕНТОВ ДЛЯ ЗАКАЗЧИКА'
+                })
+                <div class="page__list">
+                    <ol>
+                        <li>Упаковочный лист</li>
+                        <li>Комплектовочная ведомость</li>
+                        <li>Чертежи КМД и монтажная схема</li>
+                        <li>Паспорт на строительные металлоконструкции, в состав которого могут включаться: акты ВИК и
+                            УЗК, акты скрытых работ, сертификаты на металлопрокат и все используемые материалы,
+                            свидетельства об аттестации технологии сварки и оборудования</li>
+                    </ol>
+                </div>
+            </div>
         </div>
-        @@include('section-title/section-title.html', {
-        sectionTitleClass:'',
-        sectionTitleText: 'какую информацию будет видеть заказчик'
-        })
     </section>
 </main>
 
