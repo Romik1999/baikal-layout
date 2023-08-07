@@ -1793,14 +1793,14 @@ main {
 
   .mega-menu__link {
     padding-left: 15px;
-    padding-right: 25px;
+    padding-right: 35px;
   }
 
   .mega-menu__icon {
     width: 11px;
     height: 7px;
     top: calc(50% - 3.5px);
-    right: 5px;
+    right: 15px;
   }
 
   .mega-menu__subitems {
