@@ -1,38 +1,42 @@
 body {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: Helvetica, sans-serif;
   font-size: 20px;
   line-height: 120%;
   color: #000;
   font-weight: 400;
   min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background: var(--unnamed, linear-gradient(225deg, #000 0%, #222 100%));
 }
 
 section {
   padding: 80px 30px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   position: relative;
-}
-@media screen and (max-width: 992px) {
-  section {
-    padding: 40px 20px;
-  }
-}
-@media screen and (max-width: 576px) {
-  section {
-    padding: 40px 15px;
-  }
 }
 
 main {
-  flex: 1 1 auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .cont {
@@ -45,28 +49,60 @@ main {
 .swiper {
   overflow: hidden;
 }
+
 .swiper-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  column-gap: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
   margin-top: 20px;
-}
-@media screen and (max-width: 575px) {
-  .swiper-bottom {
-    column-gap: 15px;
-  }
 }
 
 .section-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   row-gap: 15px;
   margin-bottom: 60px;
 }
+
+@media screen and (max-width: 992px) {
+  section {
+    padding: 40px 20px;
+  }
+}
+
 @media screen and (max-width: 769px) {
   .section-top {
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  section {
+    padding: 40px 15px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .swiper-bottom {
+    -webkit-column-gap: 15px;
+       -moz-column-gap: 15px;
+            column-gap: 15px;
   }
 }

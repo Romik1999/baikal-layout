@@ -1,14 +1,28 @@
 @import "../../scss/colors.scss";
 
 .hero {
-  padding: 30px;
+  padding-top: 140px;
   padding-bottom: 0;
+  padding-left: 30px;
+  padding-right: 30px;
   height: 100%;
   display: flex;
   flex: 1 1 auto;
   flex-direction: column;
   box-sizing: border-box;
   overflow: hidden;
+
+  @media screen and (max-width: 1441px) {
+    padding-top: 100px;
+  }
+  @media screen and (max-width: 1025px) {
+    padding-top: 70px;
+  }
+  @media screen and (max-width: 769px) {
+    padding-top: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 
   &:before {
     content: '';
@@ -41,72 +55,51 @@
     height: 100%;
   }
 
-  &-title {
-    &__letter {
-      position: relative;
-      & span{
-        &:nth-child(1){
-          text-shadow: -8.564509391784668px -8.564509391784668px 42.82254409790039px 0px rgba(28, 28, 28, 0.80);
-          font-family: CodePro, sans-serif;
-          font-size: 124.939px;
-          font-style: normal;
-          line-height: normal;
-          letter-spacing: -2.499px;
-          text-transform: uppercase;
-          position: relative;
-          z-index: 1;
+  &__title {
+    display: flex;
+    justify-content: center;
 
-          background: linear-gradient(180deg, #222 0%, #070707 100%);
-          background-clip: text;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-        }
-        &:nth-child(2){
-          text-shadow: -5.138705730438232px 12.846763610839844px 21.411272048950195px 0px rgba(28, 28, 28, 0.60), -12.846763610839844px 1.7129019498825073px 3.4258038997650146px 0px rgba(28, 28, 28, 0.90), -25.693527221679688px 2.569352865219116px 17.129018783569336px 0px rgba(28, 28, 28, 0.70);
-          font-family: CodePro, sans-serif;
-          font-size: 124.939px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: normal;
-          letter-spacing: -2.499px;
-          text-transform: uppercase;
-          position: absolute;
-          top: 0;
-          left: 0;
-          z-index: 2;
-
-          background: linear-gradient(180deg, #EBEBEB 0%, #FFF 100%);
-          background-clip: text;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-        }
-        &:nth-child(3){
-          font-family: CodePro, sans-serif;
-          font-size: 124.939px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: normal;
-          letter-spacing: -2.499px;
-          text-transform: uppercase;
-
-          position: absolute;
-          top: 100%;
-          left: 0;
-          z-index: 2;
-          transform: rotate(180deg);
-
-          background: linear-gradient(180deg, rgba(226, 226, 226, 0.00) 0%, rgba(200, 200, 200, 0.35) 100%);
-          background-clip: text;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-        }
-      }
+    & img {
+      width: 100%;
+      max-width: 1070px;
     }
+  }
+
+  &__video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   &__links {
     margin-top: auto;
     margin-bottom: 0;
+
+    @media screen and (max-width: 769px) {
+      margin-bottom: 50px;
+    }
+  }
+
+  &-video {
+    display: flex;
+    max-width: 115px;
+
+    @media screen and (max-width: 1441px) {
+      max-width: 100px;
+    }
+    @media screen and (max-width: 1025px) {
+      max-width: 60px;
+    }
+    @media screen and (max-width: 769px) {
+      max-width: 65px;
+    }
+
+    & img,
+    & svg {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
   }
 
   &-links {
@@ -117,6 +110,11 @@
       width: 100%;
       margin: 0 auto;
       list-style: none;
+
+      @media screen and (max-width: 769px) {
+        flex-wrap: wrap;
+        row-gap: 10px;
+      }
     }
 
     &__item {
@@ -125,9 +123,31 @@
       align-items: center;
       justify-content: center;
       position: relative;
-      padding: 36px 0;
+      padding: 36px 20px;
+      box-sizing: border-box;
 
-      &:not(:last-child) {
+      @media screen and (max-width: 1441px) {
+        padding: 20px;
+      }
+      @media screen and (max-width: 1275px) {
+        font-size: 16px;
+      }
+      @media screen and (max-width: 1025px) {
+        font-size: 15px;
+      }
+      @media screen and (max-width: 769px) {
+        font-size: 14px;
+        width: 50%;
+        padding: 5px;
+        height: 70px;
+      }
+      @media screen and (max-width: 340px) {
+        width: 100%;
+        height: auto;
+      }
+
+      &:nth-child(1),
+      &:nth-child(3) {
         &:after {
           content: '';
           position: absolute;
@@ -136,6 +156,27 @@
           height: 100%;
           width: 2px;
           background: linear-gradient(270deg, rgba(243, 243, 243, 0.00) 0%, rgba(243, 243, 243, 0.65) 31.77%, #F3F3F3 49.62%, rgba(243, 243, 243, 0.60) 67.71%, rgba(243, 243, 243, 0.00) 100%);
+
+          @media screen and (max-width: 340px) {
+            display: none;
+          }
+        }
+      }
+
+      &:nth-child(2) {
+        &:after {
+          content: '';
+          position: absolute;
+          right: 0;
+          top: 0;
+          height: 100%;
+          width: 2px;
+          background: linear-gradient(270deg, rgba(243, 243, 243, 0.00) 0%, rgba(243, 243, 243, 0.65) 31.77%, #F3F3F3 49.62%, rgba(243, 243, 243, 0.60) 67.71%, rgba(243, 243, 243, 0.00) 100%);
+          display: block;
+
+          @media screen and (max-width: 769px) {
+            display: none;
+          }
         }
       }
     }
@@ -151,6 +192,25 @@
       max-width: 280px;
       width: 100%;
       display: flex;
+
+      @media screen and (max-width: 1441px) {
+        font-size: 18px;
+      }
+      @media screen and (max-width: 1275px) {
+        font-size: 16px;
+      }
+      @media screen and (max-width: 1025px) {
+        font-size: 15px;
+      }
+      @media screen and (max-width: 769px) {
+        font-size: 14px;
+        text-align: center;
+        justify-content: center;
+        max-width: 150px;
+      }
+      @media screen and (max-width: 340px) {
+        max-width: 100%;
+      }
 
       &:hover {
 
