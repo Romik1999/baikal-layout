@@ -14,7 +14,21 @@
 @@include('breadcrumbs/breadcrumbs.html', {pageSlug: 'Программа управления производством'})
 
 <main class="main">
-    Программа управления производством
+    <section class="page">
+        @@include('page-title/page-title.html', {
+        pageTitleClass:'page__title',
+        pageTitleText: 'Программа управления производством'
+        })
+        <div class="page__text"></div>
+        <div class="page__images">
+            <img src="./img/production-management-program/production-management-program-1.png" alt="1">
+            <img src="./img/production-management-program/production-management-program-2.png" alt="2">
+        </div>
+        @@include('section-title/section-title.html', {
+        sectionTitleClass:'',
+        sectionTitleText: 'какую информацию будет видеть заказчик'
+        })
+    </section>
 </main>
 
 @@include('modal/modal.html')
