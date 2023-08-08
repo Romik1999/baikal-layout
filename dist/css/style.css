@@ -116,7 +116,7 @@ main {
 }
 
 .page__content {
-  max-width: 1305px;
+  max-width: 1306px;
   width: 100%;
   margin: 0 auto;
   display: -webkit-box;
@@ -1207,8 +1207,6 @@ main {
       flex-wrap: wrap;
   position: relative;
   padding-bottom: 40px;
-  padding-left: 30px;
-  padding-right: 30px;
   margin-top: 60px;
 }
 
@@ -1303,6 +1301,43 @@ main {
           transform: translateX(-50%) translateY(-50%);
   width: 117px;
   height: 117px;
+}
+
+.file {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.file__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 44px;
+  height: 54px;
+}
+
+.file__icon img,
+.file__icon svg {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.file__title {
+  color: #F3F3F3;
+  font-size: 18px;
+  line-height: 120%;
 }
 
 .hero {
@@ -1687,6 +1722,10 @@ main {
     height: 95px;
   }
 
+  .file__title {
+    font-size: 16px;
+  }
+
   .hero {
     padding-top: 100px;
   }
@@ -1919,6 +1958,15 @@ main {
   .video__play {
     width: 73px;
     height: 73px;
+  }
+
+  .file__icon {
+    width: 36.667px;
+    height: 45px;
+  }
+
+  .file__title {
+    font-size: 15px;
   }
 
   .hero {
@@ -2228,8 +2276,6 @@ main {
     font-size: 25px;
     margin-top: 15px;
     padding-bottom: 50px;
-    padding-left: 15px;
-    padding-right: 15px;
   }
 
   .page-title span:before {
@@ -2250,6 +2296,15 @@ main {
   .video__play {
     width: 34px;
     height: 34px;
+  }
+
+  .file__icon {
+    width: 35px;
+    height: 41px;
+  }
+
+  .file__title {
+    font-size: 13px;
   }
 
   .hero {

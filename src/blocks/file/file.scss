@@ -1,0 +1,49 @@
+@import "../../scss/colors.scss";
+
+.file {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 20px;
+
+  &__icon {
+    display: flex;
+    width: 44px;
+    height: 54px;
+
+    @media screen and (max-width: 1025px) {
+      width: 36.667px;
+      height: 45px;
+    }
+    @media screen and (max-width: 769px) {
+      width: 35px;
+      height: 41px;
+    }
+
+    & img,
+    & svg {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+
+  &__title {
+    color: #F3F3F3;
+    font-size: 18px;
+    line-height: 120%;
+
+    @media screen and (max-width: 1441px) {
+      font-size: 16px;
+    }
+    @media screen and (max-width: 1025px) {
+      font-size: 15px;
+    }
+    @media screen and (max-width: 769px) {
+      font-size: 13px;
+    }
+  }
+
+  @media screen and (max-width: 769px) {
+  }
+}
