@@ -15,10 +15,12 @@
   flex-direction: column;
   position: relative;
   padding-bottom: 40px;
+  margin-top: 60px;
 
   @media screen and (max-width: 1441px) {
     font-size: 40px;
     padding-bottom: 30px;
+    margin-top: 50px;
   }
   @media screen and (max-width: 1025px) {
     font-size: 32px;
@@ -27,6 +29,8 @@
   @media screen and (max-width: 769px) {
     text-align: center;
     font-size: 25px;
+    margin-top: 15px;
+    padding-bottom: 50px;
   }
   @media screen and (max-width: 340px) {
     padding-bottom: 10px;

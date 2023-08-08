@@ -1,0 +1,68 @@
+<section class="page program">
+    <div class="page__content">
+        <div class="page__section">
+            <p class="page__text">
+                Собственно-разработанная программа управлением производством помогает контролировать и
+                координировать
+                все
+                этапы создания заказа не только заводу-изготовителю, но и Заказчику
+            </p>
+            <div class="page__images">
+                @@include('images/images.html', {
+                imagesCustomClass:'program-images',
+                imagesColumnClass:'cols-2',
+                imageUrl1: 'program-1',
+                imageUrl2: 'program-2'
+                })
+            </div>
+            <p class="page__text">
+                Собственно-разработанная программа управлением производством помогает контролировать и
+                координировать
+                все
+                этапы создания заказа не только заводу-изготовителю, но и Заказчику
+            </p>
+        </div>
+        <div class="page__section">
+            @@include('section-title/section-title.html', {
+            sectionTitleClass:'',
+            sectionTitleText: 'какую информацию будет видеть заказчик'
+            })
+            <p class="page__text">
+                - Процент разработки чертежей КМД <br>
+                - Вес и габариты каждой отправочной марки<br>
+                - Что будет входить в одну фазу и срок её поставки<br>
+                - Отчёт о состоянии каждой марки (на этапе: заготовки, сборки, сварки, покраски, упаковки и
+                отгрузки)
+            </p>
+            <div class="page__video">
+                @@include('video/video.html', {
+                videoCustomClass:'program-video',
+                videoUrl1: 'program-1',
+                })
+            </div>
+        </div>
+        <div class="page__section">
+            @@include('section-title/section-title.html', {
+            sectionTitleClass:'',
+            sectionTitleText: 'этапы работы программы управления производством'
+            })
+            <div class="page__list">
+                @@include('stages-list/stages-list.html')
+            </div>
+        </div>
+        <div class="page__section">
+            @@include('section-title/section-title.html', {
+            sectionTitleClass:'',
+            sectionTitleText: 'ПРИ ОТГРУЗКЕ ГОТОВЫХ МЕТАЛЛОКОНСТРУКЦИЙ ПРОГРАММА АВТОМАТИЧЕСКИ ФОРМИРУЕТ ПАКЕТ ДОКУМЕНТОВ ДЛЯ ЗАКАЗЧИКА'
+            })
+            <p class="page__text">
+                1) Упаковочный лист<br>
+                2) Комплектовочная ведомость<br>
+                3) Чертежи КМД и монтажная схема<br>
+                4) Паспорт на строительные металлоконструкции, в состав которого могут включаться: акты ВИК и УЗК, акты
+                скрытых работ, сертификаты на металлопрокат и все используемые материалы, свидетельства об аттестации
+                технологии сварки и оборудования
+            </p>
+        </div>
+    </div>
+</section>

@@ -17,6 +17,7 @@
           flex-direction: column;
   position: relative;
   padding-bottom: 40px;
+  margin-top: 60px;
 }
 
 .page-title:before {
@@ -42,6 +43,7 @@
   .page-title {
     font-size: 40px;
     padding-bottom: 30px;
+    margin-top: 50px;
   }
 }
 
@@ -56,6 +58,8 @@
   .page-title {
     text-align: center;
     font-size: 25px;
+    margin-top: 15px;
+    padding-bottom: 50px;
   }
 }
 
