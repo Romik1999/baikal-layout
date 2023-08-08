@@ -1,0 +1,50 @@
+<section class="page competitive-advantages">
+    <div class="page__content">
+        <div class="page__section">
+            <p class="page__text">
+                На нашем предприятии разработана собственная программа управления производством, которая помогает контролировать и координировать работу каждого заказа.
+            </p>
+        </div>
+        <div class="page__section">
+            @@include('section-title/section-title.html', {
+            sectionTitleClass:'',
+            sectionTitleText: 'в чём преимущество для заказчика?'
+            })
+            <p class="page__text">
+                Заказчик может контролировать состояние своего заказа на каждом этапе производства, таким образом реагируя на любые отклонения от графика, предотвращая срыв сроков.
+            </p>
+            <div class="page__images">
+                @@include('images/images.html', {
+                imagesCustomClass:'competitive-advantages-images',
+                imagesColumnClass:'cols-2',
+                imagesColumnGapClass:'cols-2',
+                imageUrl1: 'program-1',
+                imageUrl2: 'program-2'
+                })
+            </div>
+        </div>
+        <div class="page__section">
+            @@include('section-title/section-title.html', {
+            sectionTitleClass:'',
+            sectionTitleText: 'этапы работы программы управления производством'
+            })
+            <div class="page__list">
+                @@include('stages-list/stages-list.html')
+            </div>
+        </div>
+        <div class="page__section">
+            @@include('section-title/section-title.html', {
+            sectionTitleClass:'',
+            sectionTitleText: 'ПРИ ОТГРУЗКЕ ГОТОВЫХ МЕТАЛЛОКОНСТРУКЦИЙ ПРОГРАММА АВТОМАТИЧЕСКИ ФОРМИРУЕТ ПАКЕТ ДОКУМЕНТОВ ДЛЯ ЗАКАЗЧИКА'
+            })
+            <p class="page__text">
+                1) Упаковочный лист<br>
+                2) Комплектовочная ведомость<br>
+                3) Чертежи КМД и монтажная схема<br>
+                4) Паспорт на строительные металлоконструкции, в состав которого могут включаться: акты ВИК и УЗК, акты
+                скрытых работ, сертификаты на металлопрокат и все используемые материалы, свидетельства об аттестации
+                технологии сварки и оборудования
+            </p>
+        </div>
+    </div>
+</section>
