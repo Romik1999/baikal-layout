@@ -85,6 +85,12 @@ main {
   width: 100%;
 }
 
+.page__different {
+  margin: 0 auto;
+  max-width: 776px;
+  width: 100%;
+}
+
 .page__formula {
   color: #FFF;
   text-align: center;

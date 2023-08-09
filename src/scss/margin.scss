@@ -1,6 +1,6 @@
-.m{
-  &b{
-    &-60{
+.m {
+  &b {
+    &-60 {
       margin-bottom: 60px;
 
       @media screen and (max-width: 1441px) {
@@ -13,7 +13,8 @@
         margin-bottom: 20px;
       }
     }
-    &-80{
+
+    &-80 {
       margin-bottom: 80px;
 
       @media screen and (max-width: 1441px) {
@@ -26,8 +27,23 @@
         margin-bottom: 40px;
       }
     }
-    &-150{
+
+    &-150 {
       margin-bottom: 150px;
     }
+  }
+}
+
+.text {
+  &-left {
+    text-align: left;
+  }
+
+  &-center {
+    text-align: center;
+  }
+
+  &-right {
+    text-align: right;
   }
 }
