@@ -16,8 +16,8 @@
             <div class="page__images">
                 @@include('images/images.html', {
                 imagesCustomClass:'competitive-advantages-images',
+                imagesDisplayClass:'flex',
                 imagesColumnClass:'cols-2',
-                imagesColumnGapClass:'cols-2',
                 imageUrl1: 'common/noPhoto',
                 imageUrl2: 'common/noPhoto'
                 })
@@ -58,8 +58,8 @@
             <div class="page__images">
                 @@include('images/images.html', {
                 imagesCustomClass:'competitive-advantages-images',
+                imagesDisplayClass:'flex',
                 imagesColumnClass:'cols-2',
-                imagesColumnGapClass:'cols-2',
                 imageUrl1: 'common/noPhoto',
                 imageUrl2: 'common/noPhoto'
                 })
@@ -91,8 +91,8 @@
             <div class="page__images">
                 @@include('images/images.html', {
                 imagesCustomClass:'competitive-advantages-images',
+                imagesDisplayClass:'flex',
                 imagesColumnClass:'cols-2',
-                imagesColumnGapClass:'cols-2',
                 imageUrl1: 'content/competitive-advantages-1',
                 imageUrl2: 'content/competitive-advantages-2'
                 })
@@ -127,24 +127,22 @@
                 1. По мере монтажа металлоконструкций Заказчик (Подрядная организация) снимает с каждой марки соответствующую бирки и сканирует её телефоном, при помощи специального Приложения
             </p>
             <div class="page__images">
-                @@include('images/images.html', {
+                @@include('images/images-single.html', {
                 imagesCustomClass:'competitive-advantages-images',
+                imagesDisplayClass:'flex',
                 imagesColumnClass:'cols-1',
-                imagesColumnGapClass:'cols-1',
                 imageUrl1: 'common/noPhotoBig',
-                imageUrl2: '0'
                 })
             </div>
             <p class="page__text">
                 2. Далее информация о смонтированных конструкциях отправляется при помощи Приложения Telegram на завод-изготовитель, где специалист по монтажу отмечает смонтированные металлоконструкции во внутренней программе производства
             </p>
             <div class="page__images">
-                @@include('images/images.html', {
+                @@include('images/images-single.html', {
                 imagesCustomClass:'competitive-advantages-images',
+                imagesDisplayClass:'flex',
                 imagesColumnClass:'cols-1',
-                imagesColumnGapClass:'cols-1',
                 imageUrl1: 'common/noPhotoBig',
-                imageUrl2: '0'
                 })
             </div>
             <p class="page__text">
@@ -152,12 +150,11 @@
                 Кроме этого, на монтажной схеме в программе управления производством смонтированные металлоконструкции отображаются определённым цветом, что даёт визуальное представление о ходе работы монтажа
             </p>
             <div class="page__images">
-                @@include('images/images.html', {
+                @@include('images/images-single.html', {
                 imagesCustomClass:'competitive-advantages-images',
+                imagesDisplayClass:'flex',
                 imagesColumnClass:'cols-1',
-                imagesColumnGapClass:'cols-1',
                 imageUrl1: 'common/noPhotoBig',
-                imageUrl2: '0'
                 })
             </div>
         </div>
@@ -168,17 +165,19 @@
             })
 
             <p class="page__text">
-                Наличие сертификата соответствия требованиям ISO 9001 - это доказательство грамотного управления предприятием, подтверждение того, что оно выпускает качественную продукцию.
+                Наличие сертификата соответствия требованиям ISO 9001 - это доказательство грамотного управления предприятием, подтверждение того, что оно выпускает качественную продукцию.<br>
                 Данная система менеджмента качества основывается на 8 принципах:
-                Работа компании должна быть ориентирована на Заказчика
-                Цели и задачи компании определяют её лидеры. Они должны создать такую среду, которая максимально благоприятна для достижения поставленных целей
-                Сотрудники предприятия должны понимать процессы, происходящие в компании, стремиться участвовать в них и приносить максимальную пользу компании
-                При организации деятельности компании на первое место ставится не результат, а процесс его достижения. Только так можно построить систему, которая позволит быстрее получать необходимый результат
-                Управление компанией должно быть системным. Это позволит повысить её эффективность
-                Компания должна постоянно стремиться к улучшениям, начиная от повышения уровня знаний персонала и заканчивая улучшением качества продукции, процессов управления и производства
-                Для принятия решений при управлении предприятием необходимо опираться только на надежную и точную информацию
-                Строить отношения с Поставщиками нужно на взаимовыгодных условиях
             </p>
+            <ol class="page__text">
+                <li>Работа компании должна быть ориентирована на Заказчика</li>
+                <li>Цели и задачи компании определяют её лидеры. Они должны создать такую среду, которая максимально благоприятна для достижения поставленных целей</li>
+                <li>Сотрудники предприятия должны понимать процессы, происходящие в компании, стремиться участвовать в них и приносить максимальную пользу компании</li>
+                <li>При организации деятельности компании на первое место ставится не результат, а процесс его достижения. Только так можно построить систему, которая позволит быстрее получать необходимый результат</li>
+                <li>Управление компанией должно быть системным. Это позволит повысить её эффективность</li>
+                <li>Компания должна постоянно стремиться к улучшениям, начиная от повышения уровня знаний персонала и заканчивая улучшением качества продукции, процессов управления и производства</li>
+                <li>Для принятия решений при управлении предприятием необходимо опираться только на надежную и точную информацию</li>
+                <li>Строить отношения с Поставщиками нужно на взаимовыгодных условиях</li>
+            </ol>
 
             <div class="page__file">
                 @@include('file/file.html', {
