@@ -1,0 +1,33 @@
+.m{
+  &b{
+    &-60{
+      margin-bottom: 60px;
+
+      @media screen and (max-width: 1441px) {
+        margin-bottom: 45px;
+      }
+      @media screen and (max-width: 1025px) {
+        margin-bottom: 30px;
+      }
+      @media screen and (max-width: 769px) {
+        margin-bottom: 20px;
+      }
+    }
+    &-80{
+      margin-bottom: 80px;
+
+      @media screen and (max-width: 1441px) {
+        margin-bottom: 70px;
+      }
+      @media screen and (max-width: 1025px) {
+        margin-bottom: 60px;
+      }
+      @media screen and (max-width: 769px) {
+        margin-bottom: 40px;
+      }
+    }
+    &-150{
+      margin-bottom: 150px;
+    }
+  }
+}

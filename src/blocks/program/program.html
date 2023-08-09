@@ -1,13 +1,13 @@
 <section class="page program">
     <div class="page__content">
         <div class="page__section">
-            <p class="page__text">
+            <p class="page__text mb-60">
                 Собственно-разработанная программа управлением производством помогает контролировать и
                 координировать
                 все
                 этапы создания заказа не только заводу-изготовителю, но и Заказчику
             </p>
-            <div class="page__images">
+            <div class="page__images mb-60">
                 @@include('images/images.html', {
                 imagesCustomClass:'program-images',
                 imagesDisplayClass:'grid',
@@ -24,11 +24,11 @@
             </p>
         </div>
         <div class="page__section">
-            @@include('section-title/section-title.html', {
-            sectionTitleClass:'',
-            sectionTitleText: 'какую информацию будет видеть заказчик'
+            @@include('section-subtitle/section-subtitle.html', {
+            sectionSubTitleClass:'mb-80',
+            sectionSubTitleText: 'какую информацию будет видеть заказчик'
             })
-            <p class="page__text">
+            <p class="page__text mb-80">
                 - Процент разработки чертежей КМД <br>
                 - Вес и габариты каждой отправочной марки<br>
                 - Что будет входить в одну фазу и срок её поставки<br>
@@ -42,19 +42,20 @@
                 })
             </div>
         </div>
+
         <div class="page__section">
-            @@include('section-title/section-title.html', {
-            sectionTitleClass:'',
-            sectionTitleText: 'этапы работы программы управления производством'
+            @@include('section-subtitle/section-subtitle.html', {
+            sectionSubTitleClass:'mb-80',
+            sectionSubTitleText: 'этапы работы программы управления производством'
             })
             <div class="page__list">
                 @@include('stages-list/stages-list.html')
             </div>
         </div>
         <div class="page__section">
-            @@include('section-title/section-title.html', {
-            sectionTitleClass:'',
-            sectionTitleText: 'ПРИ ОТГРУЗКЕ ГОТОВЫХ МЕТАЛЛОКОНСТРУКЦИЙ ПРОГРАММА АВТОМАТИЧЕСКИ ФОРМИРУЕТ ПАКЕТ ДОКУМЕНТОВ ДЛЯ ЗАКАЗЧИКА'
+            @@include('section-subtitle/section-subtitle.html', {
+            sectionSubTitleClass:'mb-80',
+            sectionSubTitleText: 'ПРИ ОТГРУЗКЕ ГОТОВЫХ МЕТАЛЛОКОНСТРУКЦИЙ ПРОГРАММА АВТОМАТИЧЕСКИ ФОРМИРУЕТ ПАКЕТ ДОКУМЕНТОВ ДЛЯ ЗАКАЗЧИКА'
             })
             <p class="page__text">
                 1) Упаковочный лист<br>

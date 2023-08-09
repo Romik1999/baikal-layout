@@ -90,38 +90,21 @@ main {
     }
 
     & p {
-      margin: 0;
+
     }
+  }
+
+  &__text {
+    margin: 0;
   }
 
   &__images {
-    margin: 50px auto;
+    margin: 0 auto;
     max-width: 1080px;
     width: 100%;
-
-    @media screen and (max-width: 1441px) {
-      margin: 40px auto;
-    }
-    @media screen and (max-width: 1025px) {
-      margin: 30px auto;
-    }
-    @media screen and (max-width: 769px) {
-      margin: 25px auto;
-    }
   }
 
   &__video {
-    margin-top: 80px;
-
-    @media screen and (max-width: 1441px) {
-      margin-top: 65px;
-    }
-    @media screen and (max-width: 1025px) {
-      margin-top: 50px;
-    }
-    @media screen and (max-width: 769px) {
-      margin-top: 35px;
-    }
   }
 
   &__formula {
@@ -133,7 +116,6 @@ main {
     font-weight: 700;
     line-height: 120%;
     text-transform: uppercase;
-    margin: 60px 0;
 
     background: linear-gradient(180deg, #000000 10%, #FFFFFF 50%, #000000 90%);
     -webkit-background-clip: text;
@@ -151,34 +133,6 @@ main {
     }
     @media screen and (max-width: 340px) {
       font-size: 16px;
-    }
-  }
-}
-
-.m{
-  &b{
-    &-60{
-      margin-bottom: 60px;
-
-      @media screen and (max-width: 1025px) {
-        margin-bottom: 30px;
-      }
-      @media screen and (max-width: 769px) {
-
-      }
-    }
-    &-80{
-      margin-bottom: 80px;
-
-      @media screen and (max-width: 1025px) {
-        margin-bottom: 30px;
-      }
-      @media screen and (max-width: 769px) {
-
-      }
-    }
-    &-150{
-      margin-bottom: 150px;
     }
   }
 }
