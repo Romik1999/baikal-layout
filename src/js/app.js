@@ -115,6 +115,15 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    if (window.innerWidth < 769) {
+        const swiper = new Swiper('.equipment-update', {
+            navigation: {
+                nextEl: '.equipment-update--next',
+                prevEl: '.equipment-update--prev',
+            },
+        });
+    }
+
     // функция для модалки
 
     function calcScroll() {
