@@ -1,41 +1,50 @@
 @import "../../scss/colors.scss";
 
 .different {
-  display: flex;
-  justify-content: space-between;
-  column-gap: 30px;
+  &__item {
+    &:nth-child(1) {
+      width: 29%;
+      margin-right: auto;
 
-  &__before {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+      @media screen and (max-width: 769px) {
+        margin-right: unset;
+      }
+    }
 
-  &__image {
-    max-width: 378px;
-    max-height: 480px;
-    width: 100%;
-    height: 100%;
-    display: flex;
+    &:nth-child(2) {
+      width: 29%;
+      margin-right: 20px;
 
-    & img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
+      @media screen and (max-width: 769px) {
+        margin-right: unset;
+      }
+    }
+
+    &:nth-child(3) {
+      width: 29%;
     }
   }
 
-  &__after {
+  &__image {
     display: flex;
-    flex-direction: column;
-  }
+    justify-content: center;
 
-  &__images {
-    display: flex;
-    column-gap: 20px;
+    @media screen and (max-width: 769px) {
+      height: 350px;
+    }
+    @media screen and (max-width: 576px) {
+      height: 265px;
+    }
 
-    & .equipment-update__text{
-      display: none;
+    & img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+
+      @media screen and (max-width: 769px) {
+        height: 100%;
+        width: auto;
+      }
     }
   }
 
@@ -54,8 +63,25 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 0.5px #FFF;
+
+    display: flex;
+    justify-content: center;
+
+    @media screen and (max-width: 1441px) {
+    }
+    @media screen and (max-width: 1025px) {
+      font-size: 18px;
+      margin-top: 15px;
+    }
+    @media screen and (max-width: 769px) {
+      margin-top: 10px;
+      display: flex;
+    }
   }
 
-  @media screen and (max-width: 769px) {
+  &__arrows {
+    @media screen and (max-width: 769px) {
+      padding: 0 15px;
+    }
   }
 }

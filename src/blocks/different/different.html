@@ -1,14 +1,25 @@
-<div class="different">
-    <div class="different__before">
-        <div class="different__image">
-            <img src="./img/content/equipment-update-1.png" alt="1">
+<div class="swiper different">
+    <div class="swiper-wrapper different__items">
+        <div class="swiper-slide different__item">
+            <div class="different__image">
+                <img src="./img/common/contentEmpty.png" alt="1">
+            </div>
+            <div class="different__text">до</div>
         </div>
-        <div class="different__text">до</div>
-    </div>
-    <div class="different__after">
-        <div class="different__image">
-            <img src="./img/content/equipment-update-2.png" alt="1">
+        <div class="swiper-slide different__item">
+            <div class="different__image">
+                <img src="./img/common/contentEmpty.png" alt="1">
+            </div>
+            <div class="different__text">После</div>
         </div>
-        <div class="different__text">после</div>
     </div>
+</div>
+
+<div class="swiper-arrows different__arrows">
+    @@include('swiper-arrow/swiper-arrow--prev.html', {
+    customClass: 'different--prev'
+    })
+    @@include('swiper-arrow/swiper-arrow--next.html', {
+    customClass: 'different--next'
+    })
 </div>

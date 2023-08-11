@@ -130,6 +130,31 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
+    let slidersTwoPhoto = document.querySelectorAll('.different')
+    if (slidersTwoPhoto){
+        slidersTwoPhoto.forEach(sliderTwoPhoto => {
+            const swiper = new Swiper(sliderTwoPhoto, {
+                slidesPerView: 2,
+                spaceBetween: 20,
+                navigation: {
+                    nextEl: sliderTwoPhoto.parentNode.querySelector('.different--next'),
+                    prevEl: sliderTwoPhoto.parentNode.querySelector('.different--prev'),
+                },
+                breakpoints: {
+                    300: {
+                        slidesPerView: 1,
+                        spaceBetween: 20
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 20
+                    },
+                }
+            });
+        })
+
+    }
+
     // функция для модалки
 
     function calcScroll() {
