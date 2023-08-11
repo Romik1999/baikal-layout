@@ -116,12 +116,18 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     if (window.innerWidth < 769) {
-        const swiper = new Swiper('.equipment-update', {
-            navigation: {
-                nextEl: '.equipment-update--next',
-                prevEl: '.equipment-update--prev',
-            },
-        });
+        let sliders = document.querySelectorAll('.equipment-update')
+        if (sliders){
+            sliders.forEach(slider => {
+                const swiper = new Swiper(slider, {
+                    navigation: {
+                        nextEl: slider.parentNode.querySelector('.equipment-update--next'),
+                        prevEl: slider.parentNode.querySelector('.equipment-update--prev'),
+                    },
+                });
+            })
+
+        }
     }
 
     // функция для модалки
