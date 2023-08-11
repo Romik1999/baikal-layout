@@ -80,16 +80,19 @@ document.addEventListener('DOMContentLoaded', function () {
     let parentLinks = document.querySelectorAll('.mega-menu__item--parent .mega-menu__link')
     if (parentLinks) {
         for (let i = 0; i < parentLinks.length; i++) {
-            parentLinks[i].addEventListener('click', function () {
-                let activeParentLink = document.querySelector('.mega-menu__item--parent .mega-menu__link.active')
-                if (activeParentLink) {
-                    activeParentLink.classList.remove('active')
-                    activeParentLink.nextElementSibling.style.maxHeight = `0px`
+            parentLinks[i].addEventListener('click', function (e) {
+                if (!this.classList.contains('active')){
+                    e.preventDefault()
+                    let activeParentLink = document.querySelector('.mega-menu__item--parent .mega-menu__link.active')
+                    if (activeParentLink) {
+                        activeParentLink.classList.remove('active')
+                        activeParentLink.nextElementSibling.style.maxHeight = `0px`
+                    }
+                    this.classList.add('active');
+                    let maxHeight = this.nextElementSibling.querySelector('.mega-menu__subitems').clientHeight
+                    let activeSubmenu = this.nextElementSibling
+                    activeSubmenu.style.maxHeight = `${maxHeight}px`
                 }
-                this.classList.add('active');
-                let maxHeight = this.nextElementSibling.querySelector('.mega-menu__subitems').clientHeight
-                let activeSubmenu = this.nextElementSibling
-                activeSubmenu.style.maxHeight = `${maxHeight}px`
             })
         }
     }

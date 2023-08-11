@@ -1,0 +1,19 @@
+@import "../../scss/colors.scss";
+
+.production {
+  &__items {
+    display: flex;
+    flex-direction: column;
+    row-gap: 150px;
+
+    @media screen and (max-width: 1025px) {
+      row-gap: 100px;
+    }
+    @media screen and (max-width: 769px) {
+      row-gap: 80px;
+    }
+  }
+
+  @media screen and (max-width: 769px) {
+  }
+}
