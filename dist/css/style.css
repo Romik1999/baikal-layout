@@ -1333,8 +1333,19 @@ main {
           column-gap: 20px;
 }
 
+.images.d-flex-cols-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .images.d-flex-cols-1 .image {
-  width: 100%;
+  max-width: 1040px;
+  max-height: 925px;
+  width: auto;
 }
 
 .images.d-flex-cols-2 img {

@@ -30,8 +30,14 @@
 
     &-cols {
       &-1 {
+        display: flex;
+        justify-content: center;
+
         & .image{
-          width: 100%;
+          max-width: 1040px;
+          max-height: 925px;
+          width: auto;
+
         }
       }
 
