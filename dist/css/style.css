@@ -2993,12 +2993,20 @@ main {
   }
 
   .images.d-flex-cols-2 img {
-    width: 100%;
+    max-width: 100%;
+    max-height: 420px;
+    height: 100%;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
   }
 
   .images.orientation-vertical .image {
     max-height: 380px;
     max-width: 350px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 
   .images.orientation-horizontal .image {
