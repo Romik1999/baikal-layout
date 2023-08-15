@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (window.innerWidth > 992) {
         let burger = document.querySelector('.hamburger');
         let megaLinks = document.querySelectorAll('.mega-menu__link');
-        let megaSubLinks = document.querySelectorAll('.mega-menu__subitems');
+        let megaSubLinks = document.querySelectorAll('.mega-menu__sublink');
         let megaClose = document.querySelector('.mega-block__close');
         let offsetLeft = burger.getBoundingClientRect().left
         let burgerWidth = burger.clientWidth
