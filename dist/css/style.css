@@ -1381,6 +1381,10 @@ main {
   width: calc(50% - 10px);
 }
 
+.images.d-flex-cols-3 img {
+  width: calc(33.33% - 13.3px);
+}
+
 .images.orientation-vertical .image {
   max-width: 775px;
   max-height: 925px;
@@ -2993,6 +2997,24 @@ main {
   }
 
   .images.d-flex-cols-2 img {
+    max-width: 100%;
+    max-height: 420px;
+    height: 100%;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  .images.d-flex-cols-3 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .images.d-flex-cols-3 img {
     max-width: 100%;
     max-height: 420px;
     height: 100%;
