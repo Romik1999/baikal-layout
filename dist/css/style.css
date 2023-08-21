@@ -2097,6 +2097,168 @@ main {
           box-shadow: 0px 0px 5px 0px rgba(55, 55, 55, 0.65), 0px 0px 10px 0px rgba(56, 56, 56, 0.5);
 }
 
+.services__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 150px;
+}
+
+.services-item__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.services-item__images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.services-item__techniques {
+  margin-top: 150px;
+}
+
+.services-item__subitems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 80px;
+}
+
+.services-item__subitem:nth-child(even) .services-subitem {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.services-techniques__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+  row-gap: 80px;
+}
+
+.services-techniques__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: calc(33.33% - 15px);
+}
+
+.services-techniques__img {
+  margin-bottom: 15px;
+}
+
+.services-techniques__title {
+  color: #F3F3F3;
+  text-align: center;
+  text-shadow: 0px 2px 7px rgba(28, 28, 28, 0.6), 0px 0px 2px rgba(28, 28, 28, 0.9), 0px 1px 4px #1C1C1C;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.services-techniques__desc {
+  color: var(--unnamed, #F3F3F3);
+  text-align: center;
+  font-size: 20px;
+  line-height: 120%;
+}
+
+.services-tasks__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.services-tasks__text {
+  color: var(--unnamed, #F3F3F3);
+  font-size: 20px;
+  line-height: 120%;
+}
+
+.services-subitem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.services-subitem__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 38px;
+  max-width: 662px;
+  width: 100%;
+}
+
+.services-subitem__title {
+  text-align: left;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
 .mb-60 {
   margin-bottom: 60px;
 }
@@ -2334,6 +2496,10 @@ main {
   .stages-list img {
     width: 51px;
     height: 58px;
+  }
+
+  .services__items {
+    row-gap: 130px;
   }
 
   .mb-60 {
@@ -2674,6 +2840,10 @@ main {
 
   .production-item__text {
     font-size: 15px;
+  }
+
+  .services__items {
+    row-gap: 100px;
   }
 
   .mb-60 {
@@ -3313,6 +3483,10 @@ main {
 
   .production-item--type-5 .production-item__content {
     row-gap: 35px;
+  }
+
+  .services__items {
+    row-gap: 80px;
   }
 
   .mb-60 {
