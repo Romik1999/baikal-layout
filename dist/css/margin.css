@@ -30,6 +30,10 @@
   .mb-80 {
     margin-bottom: 70px;
   }
+
+  .mb-150 {
+    margin-bottom: 110px;
+  }
 }
 
 @media screen and (max-width: 1025px) {
@@ -40,6 +44,10 @@
   .mb-80 {
     margin-bottom: 60px;
   }
+
+  .mb-150 {
+    margin-bottom: 85px;
+  }
 }
 
 @media screen and (max-width: 769px) {
@@ -49,5 +57,9 @@
 
   .mb-80 {
     margin-bottom: 40px;
+  }
+
+  .mb-150 {
+    margin-bottom: 80px;
   }
 }

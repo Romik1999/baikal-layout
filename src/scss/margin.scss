@@ -30,6 +30,16 @@
 
     &-150 {
       margin-bottom: 150px;
+
+      @media screen and (max-width: 1441px) {
+        margin-bottom: 110px;
+      }
+      @media screen and (max-width: 1025px) {
+        margin-bottom: 85px;
+      }
+      @media screen and (max-width: 769px) {
+        margin-bottom: 80px;
+      }
     }
   }
 }
