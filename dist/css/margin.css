@@ -1,3 +1,7 @@
+.mb-35 {
+  margin-bottom: 35px !important;
+}
+
 .mb-50 {
   margin-bottom: 50px;
 }
@@ -27,6 +31,10 @@
 }
 
 @media screen and (max-width: 1441px) {
+  .mb-35 {
+    margin-bottom: 27px !important;
+  }
+
   .mb-50 {
     margin-bottom: 45px;
   }
@@ -45,6 +53,10 @@
 }
 
 @media screen and (max-width: 1025px) {
+  .mb-35 {
+    margin-bottom: 20px !important;
+  }
+
   .mb-50 {
     margin-bottom: 30px;
   }

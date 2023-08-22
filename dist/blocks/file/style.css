@@ -45,6 +45,7 @@
   color: #F3F3F3;
   font-size: 18px;
   line-height: 120%;
+  text-transform: uppercase;
 }
 
 .file--button {
