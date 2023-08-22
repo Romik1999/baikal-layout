@@ -1,5 +1,18 @@
 .m {
   &b {
+    &-50{
+      margin-bottom: 50px;
+
+      @media screen and (max-width: 1441px) {
+        margin-bottom: 45px;
+      }
+      @media screen and (max-width: 1025px) {
+        margin-bottom: 30px;
+      }
+      @media screen and (max-width: 769px) {
+        margin-bottom: 25px;
+      }
+    }
     &-60 {
       margin-bottom: 60px;
 

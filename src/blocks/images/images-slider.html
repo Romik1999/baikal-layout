@@ -1,0 +1,26 @@
+<div class="images @@imagesCustomClass">
+    <div class="swiper images-slider">
+        <div class="swiper-wrapper images-slider__items">
+            <div class="swiper-slide images-slider__item">
+                <img class="images-slider__img"
+                     src="./img/@@imageUrl1.png"
+                     alt="1"
+                >
+            </div>
+            <div class="swiper-slide images-slider__item">
+                <img class="images-slider__img"
+                     src="./img/@@imageUrl2.png"
+                     alt="2"
+                >
+            </div>
+        </div>
+    </div>
+    <div class="images-bottom">
+        @@include('swiper-arrow/swiper-arrow--prev.html', {
+        customClass:'images-bottom__arrow--prev'
+        })
+        @@include('swiper-arrow/swiper-arrow--next.html', {
+        customClass:'images-bottom__arrow--next'
+        })
+    </div>
+</div>

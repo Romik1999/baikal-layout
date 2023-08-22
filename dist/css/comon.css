@@ -95,7 +95,6 @@ main {
   color: #FFF;
   text-align: center;
   text-shadow: 0px 0px 10px rgba(23, 23, 23, 0.8);
-  font-size: 50px;
   font-style: normal;
   font-weight: 700;
   line-height: 120%;
@@ -107,14 +106,26 @@ main {
   -webkit-text-stroke: 0.5px #FFF;
 }
 
+.page__formula--big {
+  font-size: 50px;
+}
+
+.page__formula--mid {
+  font-size: 35px;
+}
+
 @media screen and (max-width: 1441px) {
   .page__content {
     font-size: 18px;
     row-gap: 125px;
   }
 
-  .page__formula {
+  .page__formula--big {
     font-size: 42px;
+  }
+
+  .page__formula--mid {
+    font-size: 30px;
   }
 }
 
@@ -128,8 +139,12 @@ main {
     row-gap: 100px;
   }
 
-  .page__formula {
+  .page__formula--big {
     font-size: 32px;
+  }
+
+  .page__formula--mid {
+    font-size: 24px;
   }
 }
 
@@ -149,8 +164,12 @@ main {
     row-gap: 80px;
   }
 
-  .page__formula {
+  .page__formula--big {
     font-size: 20px;
+  }
+
+  .page__formula--mid {
+    font-size: 17px;
   }
 }
 
@@ -167,7 +186,11 @@ main {
 }
 
 @media screen and (max-width: 340px) {
-  .page__formula {
+  .page__formula--big {
     font-size: 16px;
+  }
+
+  .page__formula--mid {
+    font-size: 15px;
   }
 }

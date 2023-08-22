@@ -155,6 +155,30 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             });
         })
+    }
+
+    let imagesSliders = document.querySelectorAll('.images-slider')
+    if (imagesSliders){
+        imagesSliders.forEach(imagesSlider => {
+            const swiper = new Swiper(imagesSlider, {
+                slidesPerView: 2,
+                spaceBetween: 20,
+                navigation: {
+                    nextEl: imagesSlider.parentNode.querySelector('.images-bottom__arrow--next'),
+                    prevEl: imagesSlider.parentNode.querySelector('.images-bottom__arrow--prev'),
+                },
+                breakpoints: {
+                    300: {
+                        slidesPerView: 1,
+                        spaceBetween: 20
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 20
+                    },
+                }
+            });
+        })
 
     }
 
