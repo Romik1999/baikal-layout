@@ -1,0 +1,15 @@
+@import "../../scss/colors.scss";
+
+.reviews {
+  &-item{
+    &__img{}
+    &__title{}
+    &__desc{
+      color: #F3F3F3;
+      font-size: 20px;
+      line-height: 120%;
+    }
+  }
+  @media screen and (max-width: 769px) {
+  }
+}

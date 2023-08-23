@@ -1,0 +1,17 @@
+@import "../../scss/colors.scss";
+
+.reviews {
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 50px;
+  }
+
+  &__item{
+    width: calc(50% - 10px);
+  }
+
+  @media screen and (max-width: 769px) {
+  }
+}
