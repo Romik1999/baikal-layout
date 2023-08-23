@@ -13,3 +13,42 @@
 .reviews__item {
   width: calc(50% - 10px);
 }
+
+@media screen and (max-width: 1025px) {
+  .reviews__items {
+    -webkit-column-gap: 40px;
+       -moz-column-gap: 40px;
+            column-gap: 40px;
+    row-gap: 30px;
+  }
+
+  .reviews__item {
+    width: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .reviews__items {
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
+    row-gap: 50px;
+  }
+
+  .reviews__item {
+    width: calc(50% - 10px);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .reviews__items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .reviews__item {
+    width: 100%;
+  }
+}

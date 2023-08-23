@@ -6,12 +6,31 @@
     flex-wrap: wrap;
     column-gap: 20px;
     row-gap: 50px;
+
+    @media screen and (max-width: 1025px) {
+      column-gap: 40px;
+      row-gap: 30px;
+    }
+    @media screen and (max-width: 769px) {
+      column-gap: 20px;
+      row-gap: 50px;
+    }
+    @media screen and (max-width: 576px) {
+      flex-direction: column;
+    }
   }
 
-  &__item{
+  &__item {
     width: calc(50% - 10px);
-  }
 
-  @media screen and (max-width: 769px) {
+    @media screen and (max-width: 1025px) {
+      width: calc(50% - 20px);
+    }
+    @media screen and (max-width: 769px) {
+      width: calc(50% - 10px);
+    }
+    @media screen and (max-width: 576px) {
+      width: 100%;
+    }
   }
 }

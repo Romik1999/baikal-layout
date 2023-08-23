@@ -179,7 +179,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             });
         })
+    }
 
+    let gallery = document.querySelectorAll("[data-fancybox]")
+    if (gallery){
+        Fancybox.bind("[data-fancybox]", {});
     }
 
     // функция для модалки
