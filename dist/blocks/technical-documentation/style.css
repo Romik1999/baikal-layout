@@ -50,7 +50,8 @@
 }
 
 .technical-documentation p {
-  margin: 0;
+  margin-top: 0;
+  display: block;
 }
 
 @media screen and (max-width: 1025px) {

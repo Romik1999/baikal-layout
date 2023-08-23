@@ -30,6 +30,7 @@
   display: -ms-flexbox;
   display: flex;
   width: 44px;
+  min-width: 44px;
   height: 54px;
 }
 
@@ -76,7 +77,8 @@
 
 @media screen and (max-width: 1025px) {
   .file__icon {
-    width: 36.667px;
+    width: 35px;
+    min-width: 35px;
     height: 45px;
   }
 
@@ -100,11 +102,6 @@
         -ms-flex-align: center;
             align-items: center;
     row-gap: 20px;
-  }
-
-  .file__icon {
-    width: 35px;
-    height: 41px;
   }
 
   .file__title {

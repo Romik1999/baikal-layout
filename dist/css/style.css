@@ -1497,6 +1497,7 @@ main {
   display: -ms-flexbox;
   display: flex;
   width: 44px;
+  min-width: 44px;
   height: 54px;
 }
 
@@ -2449,7 +2450,8 @@ main {
 }
 
 .technical-documentation p {
-  margin: 0;
+  margin-top: 0;
+  display: block;
 }
 
 .mb-35 {
@@ -2958,7 +2960,8 @@ main {
   }
 
   .file__icon {
-    width: 36.667px;
+    width: 35px;
+    min-width: 35px;
     height: 45px;
   }
 
@@ -3552,11 +3555,6 @@ main {
         -ms-flex-align: center;
             align-items: center;
     row-gap: 20px;
-  }
-
-  .file__icon {
-    width: 35px;
-    height: 41px;
   }
 
   .file__title {
