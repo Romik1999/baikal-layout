@@ -15,6 +15,11 @@
     width: 52px;
     height: 52px;
 
+    @media screen and (max-width: 1025px) {
+      width: 39px;
+      height: 39px;
+    }
+
     & img,
     & svg{
       width: 100%;
