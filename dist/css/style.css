@@ -998,6 +998,76 @@ main {
   line-height: 120%;
 }
 
+.form-file__title {
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-file__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 15px;
+     -moz-column-gap: 15px;
+          column-gap: 15px;
+  position: relative;
+}
+
+.form-file__button {
+  border-radius: 10px;
+  background: var(--linear, linear-gradient(225deg, #363636 0%, rgba(54, 54, 54, 0) 100%));
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.7);
+          box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.7);
+  width: 243px;
+  height: 50px;
+  color: #FFF;
+  text-align: center;
+  /* 16 планшет */
+  font-family: Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  /* 19.2px */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.form-file__text {
+  color: #FFF;
+  text-align: center;
+  /* 16 планшет */
+  font-family: Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  /* 19.2px */
+}
+
+.form-file__input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  z-index: -1;
+}
+
 .modal {
   position: fixed;
   z-index: 199;
@@ -2884,6 +2954,37 @@ main {
   border: none;
 }
 
+.calculation__wrapper {
+  max-width: 830px;
+  width: 100%;
+  border-radius: 15px;
+  background: var(--unnamed, #222);
+  -webkit-box-shadow: -5px 5px 10px 0px rgba(18, 18, 18, 0.45), 0px 2px 3px 0px rgba(0, 0, 0, 0.7);
+          box-shadow: -5px 5px 10px 0px rgba(18, 18, 18, 0.45), 0px 2px 3px 0px rgba(0, 0, 0, 0.7);
+  margin: auto;
+  padding: 80px 95px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.calculation__title {
+  color: var(--unnamed, #F3F3F3);
+  text-align: center;
+  font-family: Helvetica;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 120%;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+.calculation__form {
+  max-width: 555px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .mb-35 {
   margin-bottom: 35px !important;
 }
@@ -3155,6 +3256,11 @@ main {
     height: 500px;
   }
 
+  .calculation__title {
+    font-size: 38px;
+    margin-bottom: 53px;
+  }
+
   .mb-35 {
     margin-bottom: 27px !important;
   }
@@ -3337,6 +3443,26 @@ main {
 
   .form__submit {
     height: 50px;
+  }
+
+  .form-file__title {
+    font-size: 14px;
+  }
+
+  .form-file__row {
+    -webkit-column-gap: 10px;
+       -moz-column-gap: 10px;
+            column-gap: 10px;
+  }
+
+  .form-file__button {
+    width: 200px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .form-file__text {
+    font-size: 14px;
   }
 
   .modal__wrapper {
@@ -3696,6 +3822,16 @@ main {
     height: 45px;
   }
 
+  .calculation__wrapper {
+    max-width: 644px;
+    padding: 50px 70px;
+  }
+
+  .calculation__title {
+    font-size: 30px;
+    margin-bottom: 45px;
+  }
+
   .mb-35 {
     margin-bottom: 20px !important;
   }
@@ -3963,6 +4099,15 @@ main {
 
   .form__notice {
     font-size: 10px;
+  }
+
+  .form-file__row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .form-file__button {
+    width: 168px;
   }
 
   .modal__container {
@@ -4563,6 +4708,14 @@ main {
     max-width: 350px;
   }
 
+  .calculation__wrapper {
+    padding: 50px 15px;
+  }
+
+  .calculation__title {
+    font-size: 25px;
+  }
+
   .mb-50 {
     margin-bottom: 25px;
   }
@@ -4686,8 +4839,21 @@ main {
     font-size: 12px;
   }
 
+  .form-file__button {
+    font-size: 12px;
+    width: 150px;
+  }
+
+  .form-file__text {
+    font-size: 12px;
+  }
+
   .contacts-requisites__table table {
     font-size: 10px;
+  }
+
+  .calculation__wrapper {
+    padding: 25px 15px;
   }
 }
 

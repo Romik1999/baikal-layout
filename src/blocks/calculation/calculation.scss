@@ -1,7 +1,56 @@
 @import "../../scss/colors.scss";
 
-.program {
+.calculation {
+  &__wrapper {
+    max-width: 830px;
+    width: 100%;
+    border-radius: 15px;
+    background: var(--unnamed, #222);
+    box-shadow: -5px 5px 10px 0px rgba(18, 18, 18, 0.45), 0px 2px 3px 0px rgba(0, 0, 0, 0.70);
+    margin: auto;
 
-  @media screen and (max-width: 769px) {
+    padding: 80px 95px;
+    box-sizing: border-box;
+
+    @media screen and (max-width: 1025px) {
+      max-width: 644px;
+      padding: 50px 70px;
+    }
+    @media screen and (max-width: 769px) {
+      padding: 50px 15px
+    }
+    @media screen and (max-width: 355px) {
+      padding: 25px 15px
+    }
+  }
+
+  &__title {
+    color: var(--unnamed, #F3F3F3);
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 120%;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+
+    @media screen and (max-width: 1441px) {
+      font-size: 38px;
+      margin-bottom: 53px;
+    }
+    @media screen and (max-width: 1025px) {
+      font-size: 30px;
+      margin-bottom: 45px;
+    }
+    @media screen and (max-width: 769px) {
+      font-size: 25px;
+    }
+  }
+
+  &__form {
+    max-width: 555px;
+    width: 100%;
+    margin: 0 auto;
   }
 }

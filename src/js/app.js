@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (parentLinks) {
         for (let i = 0; i < parentLinks.length; i++) {
             parentLinks[i].addEventListener('click', function (e) {
-                if (!this.classList.contains('active')){
+                if (!this.classList.contains('active')) {
                     e.preventDefault()
                     let activeParentLink = document.querySelector('.mega-menu__item--parent .mega-menu__link.active')
                     if (activeParentLink) {
@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (window.innerWidth < 769) {
         let sliders = document.querySelectorAll('.equipment-update')
-        if (sliders){
+        if (sliders) {
             sliders.forEach(slider => {
                 const swiper = new Swiper(slider, {
                     navigation: {
@@ -134,7 +134,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     let slidersTwoPhoto = document.querySelectorAll('.different')
-    if (slidersTwoPhoto){
+    if (slidersTwoPhoto) {
         slidersTwoPhoto.forEach(sliderTwoPhoto => {
             const swiper = new Swiper(sliderTwoPhoto, {
                 slidesPerView: 2,
@@ -158,7 +158,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     let imagesSliders = document.querySelectorAll('.images-slider')
-    if (imagesSliders){
+    if (imagesSliders) {
         imagesSliders.forEach(imagesSlider => {
             const swiper = new Swiper(imagesSlider, {
                 slidesPerView: 2,
@@ -180,9 +180,16 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         })
     }
+    let file = document.querySelector('.form-file input[type=file]')
+    if (file) {
+        file.addEventListener('change' , function (){
+            let fileName = this.files[0].name;
+            this.nextElementSibling.innerHTML = fileName
+        })
+    }
 
     let gallery = document.querySelectorAll("[data-fancybox]")
-    if (gallery){
+    if (gallery) {
         Fancybox.bind("[data-fancybox]", {});
     }
 
