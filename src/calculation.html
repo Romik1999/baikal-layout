@@ -11,13 +11,14 @@
 <body>
 
 @@include('header/header.html')
-@@include('breadcrumbs/breadcrumbs.html', {pageSlug: 'Отправить км на расчет'})
 
 <main class="main">
+    @@include('breadcrumbs/breadcrumbs.html', {pageSlug: 'Отправить км на расчет'})
     @@include('calculation/calculation.html')
 </main>
 
 @@include('modal/modal.html')
+@@include('background/background.html')
 
 <script src="libs/swiper/swiper-bundle.min.js"></script>
 <script src="js/app.min.js"></script>

@@ -16,26 +16,6 @@ body {
   position: relative;
 }
 
-.background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  row-gap: 530px;
-  z-index: -1;
-
-  &__round {
-    width: 1067px;
-    height: 1067px;
-    display: flex;
-    background-color: #F9F9F9;
-    filter: blur(650px);
-  }
-}
-
 section {
   padding: 60px 30px;
   box-sizing: border-box;

@@ -16,12 +16,24 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     })
 
-    let page = document.querySelector('body')
-    if (page){
-        let height = page.clientHeight
-        console.log(height);
+    function calcHeightBackground() {
+        let page = document.querySelector('main')
+        let background = document.querySelector('.background')
+        if (page) {
+            let heightPage = page.clientHeight
+            let heightHeader = header.clientHeight
+            let height = heightPage + heightHeader
+            background.style.maxHeight = `${height}px`
+        }
     }
 
+    setTimeout(() => {
+        calcHeightBackground()
+    }, 50)
+
+    window.addEventListener('resize', function (){
+        calcHeightBackground()
+    })
 
     if (window.innerWidth > 992) {
         let burger = document.querySelector('.hamburger');
@@ -188,7 +200,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let file = document.querySelector('.form-file input[type=file]')
     if (file) {
-        file.addEventListener('change' , function (){
+        file.addEventListener('change', function () {
             let fileName = this.files[0].name;
             this.nextElementSibling.innerHTML = fileName
         })
@@ -207,7 +219,6 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         })
     }
-
 
 
     // функция для модалки
