@@ -180,11 +180,26 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         })
     }
+
     let file = document.querySelector('.form-file input[type=file]')
     if (file) {
         file.addEventListener('change' , function (){
             let fileName = this.files[0].name;
             this.nextElementSibling.innerHTML = fileName
+        })
+    }
+
+    let portfolioSliders = document.querySelectorAll('.portfolio-slider')
+    if (portfolioSliders) {
+        portfolioSliders.forEach(portfolioSlider => {
+            const swiper = new Swiper(portfolioSlider, {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                navigation: {
+                    nextEl: portfolioSlider.parentNode.querySelector('.portfolio-slider__arrow--next'),
+                    prevEl: portfolioSlider.parentNode.querySelector('.portfolio-slider__arrow--prev'),
+                },
+            });
         })
     }
 
