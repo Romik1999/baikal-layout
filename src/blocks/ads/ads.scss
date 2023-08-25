@@ -1,0 +1,142 @@
+@import "../../scss/colors.scss";
+
+.ads {
+  &__items {
+    display: flex;
+    flex-direction: column;
+    row-gap: 80px;
+  }
+
+  &-item {
+    display: flex;
+    column-gap: 50px;
+
+    @media screen and (max-width: 1025px) {
+      column-gap: 25px;
+    }
+    @media screen and (max-width: 769px) {
+      flex-direction: column;
+      row-gap: 20px;
+    }
+
+    &--type {
+      &-1 {
+      }
+
+      &-2 {
+        & .ads-item {
+          &__images {
+            column-gap: 10px;
+          }
+
+          &__image {
+            width: calc(50% - 5px);
+          }
+        }
+      }
+    }
+
+    &__images {
+      display: flex;
+      width: 41%;
+
+      @media screen and (max-width: 1025px) {
+        width: calc(50% - 12.5px);
+      }
+      @media screen and (max-width: 769px) {
+       width: 100%;
+      }
+    }
+
+    &__image {
+      display: flex;
+      width: 100%;
+      object-fit: cover;
+      height: 362px;
+
+      @media screen and (max-width: 1025px) {
+        height: 282px
+      }
+      @media screen and (max-width: 769px) {
+        height: 242px
+      }
+    }
+
+    &__info {
+      width: 55%;
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+
+      @media screen and (max-width: 1025px) {
+        width: calc(50% - 12.5px);
+      }
+      @media screen and (max-width: 769px) {
+        width: 100%;
+      }
+    }
+
+    &__title {
+      color: #FFF;
+      text-shadow: 0px 0px 10px rgba(23, 23, 23, 0.80);
+
+      font-style: normal;
+      font-weight: 700;
+      line-height: 120%;
+      text-transform: uppercase;
+
+      background: linear-gradient(180deg, #000000 10%, #FFFFFF 50%, #000000 90%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke: 0.5px #FFF;
+      font-size: 25px;
+
+      @media screen and (max-width: 1441px) {
+        font-size: 20px;
+      }
+      @media screen and (max-width: 1025px) {
+        font-size: 17px;
+      }
+      @media screen and (max-width: 769px) {
+        font-size: 16px;
+      }
+      @media screen and (max-width: 340px) {
+        font-size: 15px;
+      }
+    }
+
+    &__desc {
+      color: #FFF;
+      font-family: Helvetica;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%;
+      display: flex;
+      flex-direction: column;
+      row-gap: 5px;
+
+      @media screen and (max-width: 1025px) {
+        font-size: 15px;
+      }
+    }
+
+    &__name {
+      text-transform: uppercase;
+    }
+
+    &__price{
+      color: #FFF;
+      text-shadow: 0px 2px 7px rgba(28, 28, 28, 0.60), 0px 0px 2px rgba(28, 28, 28, 0.90), 0px 1px 4px #1C1C1C;
+      font-family: Helvetica;
+      font-size: 17px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%; /* 20.4px */
+      text-transform: uppercase;
+    }
+  }
+
+  @media screen and (max-width: 769px) {
+  }
+}
