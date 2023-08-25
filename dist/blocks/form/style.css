@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 .form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -117,6 +119,76 @@
   line-height: 120%;
 }
 
+.form-file__title {
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-file__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 15px;
+     -moz-column-gap: 15px;
+          column-gap: 15px;
+  position: relative;
+}
+
+.form-file__button {
+  border-radius: 10px;
+  background: var(--linear, linear-gradient(225deg, #363636 0%, rgba(54, 54, 54, 0) 100%));
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.7);
+          box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.7);
+  width: 243px;
+  height: 50px;
+  color: #FFF;
+  text-align: center;
+  /* 16 планшет */
+  font-family: Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  /* 19.2px */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.form-file__text {
+  color: #FFF;
+  text-align: center;
+  /* 16 планшет */
+  font-family: Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  /* 19.2px */
+}
+
+.form-file__input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  z-index: -1;
+}
+
 @media screen and (max-width: 1441px) {
   .form__input::-webkit-input-placeholder {
     font-size: 16px;
@@ -153,6 +225,26 @@
   .form__submit {
     height: 50px;
   }
+
+  .form-file__title {
+    font-size: 14px;
+  }
+
+  .form-file__row {
+    -webkit-column-gap: 10px;
+       -moz-column-gap: 10px;
+            column-gap: 10px;
+  }
+
+  .form-file__button {
+    width: 200px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .form-file__text {
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 769px) {
@@ -182,5 +274,25 @@
 
   .form__notice {
     font-size: 10px;
+  }
+
+  .form-file__row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .form-file__button {
+    width: 168px;
+  }
+}
+
+@media screen and (max-width: 355px) {
+  .form-file__button {
+    font-size: 12px;
+    width: 150px;
+  }
+
+  .form-file__text {
+    font-size: 12px;
   }
 }

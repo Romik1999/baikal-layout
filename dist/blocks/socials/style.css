@@ -30,3 +30,10 @@
   -o-object-fit: contain;
      object-fit: contain;
 }
+
+@media screen and (max-width: 1025px) {
+  .socials__item {
+    width: 39px;
+    height: 39px;
+  }
+}

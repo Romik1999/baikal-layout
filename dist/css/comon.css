@@ -114,6 +114,10 @@ main {
   font-size: 35px;
 }
 
+.page__formula--sm {
+  font-size: 25px;
+}
+
 @media screen and (max-width: 1441px) {
   .page__content {
     font-size: 18px;
@@ -126,6 +130,10 @@ main {
 
   .page__formula--mid {
     font-size: 30px;
+  }
+
+  .page__formula--sm {
+    font-size: 20px;
   }
 }
 
@@ -145,6 +153,10 @@ main {
 
   .page__formula--mid {
     font-size: 24px;
+  }
+
+  .page__formula--sm {
+    font-size: 17px;
   }
 }
 
@@ -171,6 +183,10 @@ main {
   .page__formula--mid {
     font-size: 17px;
   }
+
+  .page__formula--sm {
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -191,6 +207,10 @@ main {
   }
 
   .page__formula--mid {
+    font-size: 15px;
+  }
+
+  .page__formula--sm {
     font-size: 15px;
   }
 }
