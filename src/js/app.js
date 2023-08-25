@@ -203,10 +203,7 @@ document.addEventListener('DOMContentLoaded', function () {
         })
     }
 
-    let gallery = document.querySelectorAll("[data-fancybox]")
-    if (gallery) {
-        Fancybox.bind("[data-fancybox]", {});
-    }
+
 
     // функция для модалки
 
@@ -264,4 +261,9 @@ document.addEventListener('DOMContentLoaded', function () {
     //         document.querySelector('.modal').classList.add('modal--active')
     //     }, 5000)
     // }
+
+    let gallery = document.querySelectorAll("[data-fancybox]")
+    if (gallery) {
+        Fancybox.bind("[data-fancybox]", {});
+    }
 });
