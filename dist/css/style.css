@@ -59,6 +59,37 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   background: linear-gradient(225deg, #000 0%, #222 100%);
+  position: relative;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 530px;
+  z-index: -1;
+}
+
+.background__round {
+  width: 1067px;
+  height: 1067px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #F9F9F9;
+  -webkit-filter: blur(650px);
+          filter: blur(650px);
 }
 
 section {

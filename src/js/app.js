@@ -14,8 +14,13 @@ document.addEventListener('DOMContentLoaded', function () {
             header.classList.remove("bg-dark")
             mobHeader.classList.remove("bg-dark")
         }
-
     })
+
+    let page = document.querySelector('body')
+    if (page){
+        let height = page.clientHeight
+        console.log(height);
+    }
 
 
     if (window.innerWidth > 992) {
