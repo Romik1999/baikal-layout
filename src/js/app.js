@@ -22,7 +22,13 @@ document.addEventListener('DOMContentLoaded', function () {
         if (page) {
             let heightPage = page.clientHeight
             let heightHeader = header.clientHeight
-            let height = heightPage + heightHeader
+            let heightHeaderMob = mobHeader.clientHeight
+            let height = 0
+            if (window.innerWidth > 992){
+                height = heightPage + heightHeader
+            } else {
+                height = heightPage + heightHeaderMob
+            }
             background.style.maxHeight = `${height}px`
         }
     }
