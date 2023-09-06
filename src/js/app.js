@@ -1,4 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
+
+    let formSearch = document.querySelector('form.search')
+    let formInput = formSearch.querySelector('.search__input')
     let scrollpos = window.scrollY
     const header = document.querySelector(".header")
     const mobHeader = document.querySelector(".header-mob")
@@ -63,7 +66,6 @@ document.addEventListener('DOMContentLoaded', function () {
         })
     }
 
-
     let trigger = document.querySelector('.trigger');
     let mobileMenu = document.querySelector('.mobile');
     let closeMenu = document.querySelector('.mobile .close');
@@ -101,6 +103,22 @@ document.addEventListener('DOMContentLoaded', function () {
             })
         }
     }
+
+    formSearch.addEventListener('click', function (e) {
+        if (!this.classList.contains('active')) {
+            e.preventDefault()
+            this.classList.add('active')
+        }
+    })
+
+    header.addEventListener('mouseout', function () {
+        if (formSearch.classList.contains('active')){
+            formSearch.classList.remove('active')
+            console.log(123);
+            formInput.blur()
+            console.log(333);
+        }
+    })
 
 
     let faqsTop = document.querySelectorAll('.faq-item__top');

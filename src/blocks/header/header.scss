@@ -7,7 +7,7 @@
   top: 0;
   z-index: 10;
 
-  &.bg-dark{
+  &.bg-dark {
     background: var(--unnamed, #222);
   }
 
@@ -61,6 +61,7 @@
     align-items: center;
     justify-content: space-between;
     column-gap: 30px;
+    position: relative;
 
     @media screen and (max-width: 1441px) {
       padding: 16px 0;
@@ -125,6 +126,11 @@
         width: 100%;
         margin: 0 auto;
       }
+    }
+
+    &__search {
+      width: 265px;
+      height: 45px;
     }
 
     &__trigger {
@@ -290,7 +296,7 @@
     padding: 0 10px;
   }
 
-  &.bg-dark{
+  &.bg-dark {
     background: var(--unnamed, #222);
   }
 

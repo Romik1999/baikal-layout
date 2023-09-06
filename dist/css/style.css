@@ -308,6 +308,7 @@ main {
   -webkit-column-gap: 30px;
      -moz-column-gap: 30px;
           column-gap: 30px;
+  position: relative;
 }
 
 .header-top__email,
@@ -325,6 +326,11 @@ main {
   font-size: 18px;
   line-height: 120%;
   text-decoration: none;
+}
+
+.header-top__search {
+  width: 265px;
+  height: 45px;
 }
 
 .header-top__trigger {
@@ -530,12 +536,23 @@ main {
 }
 
 .search {
-  position: relative;
+  position: absolute;
+  top: 22px;
+  right: 0;
+  width: 265px;
+  height: 45px;
+}
+
+.search.active {
   width: 100%;
 }
 
+.search.active .search__input {
+  background: rgb(46, 46, 46);
+}
+
 .search__input {
-  width: 265px;
+  width: 100%;
   height: 45px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -550,6 +567,8 @@ main {
   padding-bottom: 13px;
   padding-left: 13px;
   border: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   color: #F3F3F3;
   font-size: 18px;
   line-height: 120%;
