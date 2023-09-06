@@ -11,9 +11,9 @@
 <body>
 
 @@include('header/header.html')
-@@include('breadcrumbs/breadcrumbs.html', {pageSlug: 'Отк и лаборатория неразрешаещего контроля'})
 
 <main class="main">
+    @@include('breadcrumbs/breadcrumbs.html', {pageSlug: 'Отк и лаборатория неразрешаещего контроля'})
     @@include('page-title/page-title.html', {
     pageTitleText: '<span data-title="Отк">Отк</span> <span data-title="и">и</span> <span data-title="лаборатория">лаборатория</span> <span data-title="неразрешаещего">неразрешаещего</span> <span data-title="контроля">контроля</span>'
     })
@@ -21,6 +21,7 @@
 </main>
 
 @@include('modal/modal.html')
+@@include('background/background.html')
 
 <script src="libs/swiper/swiper-bundle.min.js"></script>
 <script src="js/app.min.js"></script>

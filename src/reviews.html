@@ -12,9 +12,9 @@
 <body>
 
 @@include('header/header.html')
-@@include('breadcrumbs/breadcrumbs.html', {pageSlug: 'Отзывы заказчиков'})
 
 <main class="main">
+    @@include('breadcrumbs/breadcrumbs.html', {pageSlug: 'Отзывы заказчиков'})
     @@include('page-title/page-title.html', {
     pageTitleText: '<span data-title="Отзывы">Отзывы</span> <span data-title="заказчиков">заказчиков</span>'
     })
@@ -22,7 +22,7 @@
 </main>
 
 @@include('modal/modal.html')
-
+@@include('background/background.html')
 
 <script src="libs/swiper/swiper-bundle.min.js"></script>
 <script src="libs/fancybox/fancybox.umd.js"></script>

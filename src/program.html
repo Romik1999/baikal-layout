@@ -11,9 +11,9 @@
 <body>
 
 @@include('header/header.html')
-@@include('breadcrumbs/breadcrumbs.html', {pageSlug: 'Программа управления производством'})
 
 <main class="main">
+    @@include('breadcrumbs/breadcrumbs.html', {pageSlug: 'Программа управления производством'})
     @@include('page-title/page-title.html', {
     pageTitleText: '<span data-title="Программа">Программа</span> <span data-title="управления">управления</span> <span data-title="производством">производством</span>'
     })
@@ -21,6 +21,7 @@
 </main>
 
 @@include('modal/modal.html')
+@@include('background/background.html')
 
 <script src="libs/swiper/swiper-bundle.min.js"></script>
 <script src="js/app.min.js"></script>

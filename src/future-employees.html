@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,24 +8,23 @@
     <link rel="stylesheet" href="css/style.min.css">
     <title>Байкальский завод маталлоконструкций | Для будущих сотрудников</title>
 </head>
-
 <body>
 
-    @@include('header/header.html')
+@@include('header/header.html')
+
+<main class="main">
     @@include('breadcrumbs/breadcrumbs.html', {pageSlug: 'Для будущих сотрудников'})
+    @@include('page-title/page-title.html', {
+    pageTitleText: '<span data-title="Для">Для</span> <span data-title="будущих">будущих</span> <span data-title="сотрудников">сотрудников</span>'
+    })
+    @@include('future-employees/future-employees.html')
+</main>
 
-    <main class="main">
-        @@include('page-title/page-title.html', {
-        pageTitleText: '<span data-title="Для">Для</span> <span data-title="будущих">будущих</span> <span data-title="сотрудников">сотрудников</span>'
-        })
-        @@include('future-employees/future-employees.html')
-    </main>
+@@include('modal/modal.html')
+@@include('background/background.html')
 
-    @@include('modal/modal.html')
-
-    <script src="libs/swiper/swiper-bundle.min.js"></script>
-    <script src="js/app.min.js"></script>
+<script src="libs/swiper/swiper-bundle.min.js"></script>
+<script src="js/app.min.js"></script>
 
 </body>
-
 </html>

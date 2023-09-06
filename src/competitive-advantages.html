@@ -11,9 +11,9 @@
 <body>
 
 @@include('header/header.html')
-@@include('breadcrumbs/breadcrumbs.html', {pageSlug: 'Конкурентные преимущества'})
 
 <main class="main">
+    @@include('breadcrumbs/breadcrumbs.html', {pageSlug: 'Конкурентные преимущества'})
     @@include('page-title/page-title.html', {
     pageTitleText: '<span data-title="конкурентные">конкурентные</span> <span data-title="преимущества">преимущества</span>'
     })
@@ -21,6 +21,7 @@
 </main>
 
 @@include('modal/modal.html')
+@@include('background/background.html')
 
 <script src="libs/swiper/swiper-bundle.min.js"></script>
 <script src="js/app.min.js"></script>
