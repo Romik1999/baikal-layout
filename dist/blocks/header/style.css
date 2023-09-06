@@ -56,6 +56,7 @@
   -webkit-column-gap: 30px;
      -moz-column-gap: 30px;
           column-gap: 30px;
+  position: relative;
 }
 
 .header-top__email,
@@ -73,6 +74,11 @@
   font-size: 18px;
   line-height: 120%;
   text-decoration: none;
+}
+
+.header-top__search {
+  width: 265px;
+  height: 45px;
 }
 
 .header-top__trigger {
