@@ -28,6 +28,13 @@
   width: calc(50% - 5px);
 }
 
+.sale-item--type-2 .sale-item__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .sale-item__images {
   display: -webkit-box;
   display: -ms-flexbox;
