@@ -1,7 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    let formSearch = document.querySelector('form.search')
-    let formInput = formSearch.querySelector('.search__input')
+    let formSearchs = document.querySelectorAll('form.search')
+    formSearchs.forEach(formSearch=>{
+        let formInput = formSearch.querySelector('.search__input')
+    })
     let scrollpos = window.scrollY
     const header = document.querySelector(".header")
     const mobHeader = document.querySelector(".header-mob")
@@ -126,15 +128,15 @@ document.addEventListener('DOMContentLoaded', function () {
         if (!this.classList.contains('active')) {
             e.preventDefault()
             this.classList.add('active')
+            this.parentNode.classList.add('active')
         }
     })
 
     header.addEventListener('mouseout', function () {
         if (formSearch.classList.contains('active')){
             formSearch.classList.remove('active')
-            console.log(123);
+            formSearch.parentNode.classList.remove('active')
             formInput.blur()
-            console.log(333);
         }
     })
 
@@ -224,7 +226,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let file = document.querySelector('.form-file input[type=file]')
     if (file) {
-        file.addEventListener('change', function () {
+        file.addEventListener('change' , function (){
             let fileName = this.files[0].name;
             this.nextElementSibling.innerHTML = fileName
         })
@@ -243,6 +245,7 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         })
     }
+
 
 
     // функция для модалки

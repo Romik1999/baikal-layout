@@ -38,8 +38,12 @@
   width: 100%;
 }
 
-.images.d-flex-cols-2 img {
+.images.d-flex-cols-2 .images__item {
   width: calc(50% - 10px);
+}
+
+.images.d-flex-cols-2 .images__item img {
+  width: 100%;
 }
 
 .images.d-flex-cols-3 img {
@@ -128,7 +132,7 @@
     row-gap: 20px;
   }
 
-  .images.d-flex-cols-2 img {
+  .images.d-flex-cols-2 .images__item {
     max-width: 100%;
     max-height: 420px;
     height: 100%;

@@ -44,7 +44,7 @@
           row-gap: 20px;
         }
 
-        & img {
+        & .images__item {
           width: calc(50% - 10px);
 
           @media screen and (max-width: 769px) {
@@ -53,6 +53,10 @@
             height: 100%;
             width: fit-content;
             margin: 0 auto;
+          }
+
+          & img{
+            width: 100%;
           }
         }
       }

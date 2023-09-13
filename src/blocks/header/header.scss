@@ -42,6 +42,14 @@
 
   &__content {
     width: 100%;
+    padding-top: 22px;
+
+    @media screen and (max-width: 1441px) {
+      padding-bottom: 16px;
+    }
+    @media screen and (max-width: 1275px) {
+      padding-bottom: 10px;
+    }
   }
 
   &__hamburger {
@@ -55,7 +63,7 @@
   }
 
   &-top {
-    padding: 22px 0;
+    padding-bottom: 22px;
     box-sizing: border-box;
     display: flex;
     align-items: center;
@@ -64,10 +72,10 @@
     position: relative;
 
     @media screen and (max-width: 1441px) {
-      padding: 16px 0;
+      padding-bottom: 16px;
     }
     @media screen and (max-width: 1275px) {
-      padding: 10px 0;
+      padding-bottom: 10px;
       column-gap: 15px;
     }
     @media screen and (max-width: 992px) {
@@ -129,8 +137,14 @@
     }
 
     &__search {
-      width: 265px;
+      max-width: 265px;
+      width: 100%;
       height: 45px;
+      position: relative;
+
+      &.active{
+        position: unset;
+      }
     }
 
     &__trigger {
@@ -349,5 +363,12 @@
     @media screen and (max-width: 355px) {
       font-size: 12px;
     }
+  }
+
+  &__search{
+    position: relative;
+    max-width: 265px;
+    width: 100%;
+    height: 40px;
   }
 }

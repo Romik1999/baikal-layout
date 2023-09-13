@@ -28,6 +28,7 @@
 
 .header__content {
   width: 100%;
+  padding-top: 22px;
 }
 
 .header__hamburger {
@@ -41,7 +42,7 @@
 }
 
 .header-top {
-  padding: 22px 0;
+  padding-bottom: 22px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-box;
@@ -77,8 +78,14 @@
 }
 
 .header-top__search {
-  width: 265px;
+  max-width: 265px;
+  width: 100%;
   height: 45px;
+  position: relative;
+}
+
+.header-top__search.active {
+  position: unset;
 }
 
 .header-top__trigger {
@@ -250,6 +257,13 @@
   max-width: 110px;
 }
 
+.header-mob__search {
+  position: relative;
+  max-width: 265px;
+  width: 100%;
+  height: 40px;
+}
+
 @media screen and (max-width: 1600px) {
   .header__wrapper {
     padding-right: 50px;
@@ -264,8 +278,12 @@
     padding-right: 0;
   }
 
+  .header__content {
+    padding-bottom: 16px;
+  }
+
   .header-top {
-    padding: 16px 0;
+    padding-bottom: 16px;
   }
 
   .header-top__email,
@@ -285,8 +303,12 @@
 }
 
 @media screen and (max-width: 1275px) {
+  .header__content {
+    padding-bottom: 10px;
+  }
+
   .header-top {
-    padding: 10px 0;
+    padding-bottom: 10px;
     -webkit-column-gap: 15px;
        -moz-column-gap: 15px;
             column-gap: 15px;
