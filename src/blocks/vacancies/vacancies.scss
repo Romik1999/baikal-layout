@@ -174,8 +174,137 @@
         max-width: 350px;
       }
     }
+
+    &__info {
+      display: none;
+
+      &.fancybox__content {
+        background: transparent;
+        padding: 0 !important;
+        color: unset !important;
+
+        & .f-button.is-close-btn {
+          top: 30px;
+          right: 30px;
+          opacity: 1;
+
+          background: transparent;
+          border-radius: 0;
+          border: none;
+          color: unset;
+          box-shadow: none;
+
+          @media screen and (max-width: 769px) {
+            top: 10px;
+            right: 10px;
+          }
+
+          & svg {
+            width: 35px;
+            height: 35px;
+            object-fit: contain;
+
+            @media screen and (max-width: 1025px) {
+              width: 25px;
+              height: 25px;
+            }
+            @media screen and (max-width: 769px) {
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
+      }
+    }
   }
 
-  @media screen and (max-width: 769px) {
+  &-info {
+    max-width: 1570px;
+    width: 100%;
+    border-radius: 10px;
+    background: #222;
+    box-shadow: 0px 5px 10px 0px rgba(18, 18, 18, 0.45), 0px 2px 3px 0px rgba(0, 0, 0, 0.70);
+    box-sizing: border-box;
+    padding: 80px 30px;
+
+    @media screen and (max-width: 1025px) {
+      padding: 45px 30px;
+    }
+    @media screen and (max-width: 769px) {
+      padding: 30px 15px;
+    }
+
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      row-gap: 40px;
+      max-width: 1340px;
+      width: 100%;
+      margin: 0 auto;
+
+      @media screen and (max-width: 1025px) {
+        row-gap: 25px;
+      }
+    }
+
+    &__block {
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+
+      @media screen and (max-width: 1025px) {
+        row-gap: 7px;
+      }
+    }
+
+    &__title {
+      color: #FFF;
+      text-shadow: 0px 2px 7px rgba(28, 28, 28, 0.60), 0px 0px 2px rgba(28, 28, 28, 0.90), 0px 1px 4px #1C1C1C;
+      font-family: Helvetica;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 120%;
+
+      @media screen and (max-width: 1025px) {
+        font-size: 16px;
+      }
+    }
+
+    &__text {
+      color: #F3F3F3;
+      font-family: Helvetica;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%; /* 21.6px */
+
+      @media screen and (max-width: 1025px) {
+        font-size: 14px;
+      }
+
+      & p {
+        margin: 0;
+        padding: 0;
+      }
+    }
+
+    &__bottom {
+      columns: 2 auto;
+      column-gap: 20px;
+
+      @media screen and (max-width: 1025px) {
+        columns: 1;
+      }
+
+      & .vacancies-info__block {
+        break-inside: avoid;
+        margin-bottom: 40px;
+
+        @media screen and (max-width: 1025px) {
+          margin-bottom: 0;
+        }
+      }
+    }
   }
 }

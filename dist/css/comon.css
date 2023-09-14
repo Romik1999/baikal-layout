@@ -119,6 +119,11 @@ main {
   font-size: 25px;
 }
 
+.fancybox__backdrop {
+  background: rgba(24, 24, 27, 0.5);
+  opacity: 1;
+}
+
 @media screen and (max-width: 1441px) {
   .page__content {
     font-size: 18px;
