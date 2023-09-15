@@ -44,12 +44,12 @@
     width: 100%;
     padding-top: 22px;
 
-    @media screen and (max-width: 1441px) {
-      padding-bottom: 16px;
-    }
-    @media screen and (max-width: 1275px) {
-      padding-bottom: 10px;
-    }
+    //@media screen and (max-width: 1441px) {
+    //  padding-bottom: 16px;
+    //}
+    //@media screen and (max-width: 1275px) {
+    //  padding-bottom: 10px;
+    //}
   }
 
   &__hamburger {
@@ -142,7 +142,7 @@
       height: 45px;
       position: relative;
 
-      &.active{
+      &.active {
         position: unset;
       }
     }
@@ -241,7 +241,9 @@
           padding-bottom: 13px;
         }
 
-        &.current {
+        &[aria-current="page"] {
+          font-weight: bold;
+
           &:after {
             height: 3px;
           }
@@ -256,6 +258,12 @@
           height: 0;
           background: #F3F3F3;
           transition: 0.2s;
+        }
+
+        &:hover{
+          &:after{
+            height: 3px;
+          }
         }
       }
     }
@@ -365,7 +373,7 @@
     }
   }
 
-  &__search{
+  &__search {
     position: relative;
     max-width: 265px;
     width: 100%;

@@ -380,7 +380,11 @@ main {
   text-transform: uppercase;
 }
 
-.header-menu__items a.current:after {
+.header-menu__items a[aria-current=page] {
+  font-weight: bold;
+}
+
+.header-menu__items a[aria-current=page]:after {
   height: 3px;
 }
 
@@ -394,6 +398,10 @@ main {
   background: #F3F3F3;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+}
+
+.header-menu__items a:hover:after {
+  height: 3px;
 }
 
 .header-button {
@@ -1443,7 +1451,7 @@ main {
   margin: 0 auto;
 }
 
-.mobile {
+.nmobile {
   position: fixed;
   z-index: 99;
   background: var(--unnamed, #222);
@@ -1457,11 +1465,11 @@ main {
           box-sizing: border-box;
 }
 
-.mobile.active {
+.nmobile.active {
   max-height: 100vh;
 }
 
-.mobile__wrapper {
+.nmobile__wrapper {
   padding: 80px 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1478,13 +1486,13 @@ main {
           box-sizing: border-box;
 }
 
-.mobile__close {
+.nmobile__close {
   position: absolute;
   top: 20px;
   right: 20px;
 }
 
-.mobile-menu__items {
+.nmobile-menu__items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1500,13 +1508,13 @@ main {
   margin: 0;
 }
 
-.mobile-menu li {
+.nmobile-menu li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.mobile-menu a {
+.nmobile-menu a {
   color: var(--unnamed, #F3F3F3);
   text-align: center;
   font-size: 14px;
@@ -1522,15 +1530,19 @@ main {
   padding: 10px;
 }
 
-.mobile-menu a:hover:after {
+.nmobile-menu a:hover:after {
   height: 3px;
 }
 
-.mobile-menu a.current:after {
+.nmobile-menu a[aria-current=page] {
+  font-weight: bold;
+}
+
+.nmobile-menu a[aria-current=page]:after {
   height: 3px;
 }
 
-.mobile-menu a:after {
+.nmobile-menu a:after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -3552,6 +3564,12 @@ main {
           column-gap: 50px;
 }
 
+.sale-item--type-1 .sale-item__image img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .sale-item--type-2 .sale-item__images {
   -webkit-column-gap: 10px;
      -moz-column-gap: 10px;
@@ -3712,10 +3730,6 @@ main {
        -moz-column-gap: 30px;
             column-gap: 30px;
     padding-right: 0;
-  }
-
-  .header__content {
-    padding-bottom: 16px;
   }
 
   .header-top {
@@ -4022,10 +4036,6 @@ main {
 }
 
 @media screen and (max-width: 1275px) {
-  .header__content {
-    padding-bottom: 10px;
-  }
-
   .header-top {
     padding-bottom: 10px;
     -webkit-column-gap: 15px;
@@ -4927,7 +4937,7 @@ main {
     right: 30px;
   }
 
-  .mobile {
+  .nmobile {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

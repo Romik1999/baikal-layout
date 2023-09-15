@@ -1,6 +1,6 @@
 @import "../../scss/colors.scss";
 
-.mobile {
+.nmobile {
   position: fixed;
   z-index: 99;
   background: var(--unnamed, #222);
@@ -68,7 +68,9 @@
         }
       }
 
-      &.current {
+      &[aria-current="page"] {
+        font-weight: bold;
+
         &:after {
           height: 3px;
         }
