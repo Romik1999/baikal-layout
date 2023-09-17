@@ -153,7 +153,11 @@
   text-transform: uppercase;
 }
 
-.header-menu__items a.current:after {
+.header-menu__items a[aria-current=page] {
+  font-weight: bold;
+}
+
+.header-menu__items a[aria-current=page]:after {
   height: 3px;
 }
 
@@ -167,6 +171,10 @@
   background: #F3F3F3;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+}
+
+.header-menu__items a:hover:after {
+  height: 3px;
 }
 
 .header-button {
@@ -278,10 +286,6 @@
     padding-right: 0;
   }
 
-  .header__content {
-    padding-bottom: 16px;
-  }
-
   .header-top {
     padding-bottom: 16px;
   }
@@ -303,10 +307,6 @@
 }
 
 @media screen and (max-width: 1275px) {
-  .header__content {
-    padding-bottom: 10px;
-  }
-
   .header-top {
     padding-bottom: 10px;
     -webkit-column-gap: 15px;

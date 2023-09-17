@@ -18,6 +18,12 @@
           column-gap: 50px;
 }
 
+.sale-item--type-1 .sale-item__image img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .sale-item--type-2 .sale-item__images {
   -webkit-column-gap: 10px;
      -moz-column-gap: 10px;
