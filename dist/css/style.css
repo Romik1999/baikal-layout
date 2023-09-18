@@ -1749,8 +1749,12 @@ main {
   width: 100%;
 }
 
-.images.d-flex-cols-3 img {
+.images.d-flex-cols-3 .images__item {
   width: calc(33.33% - 13.3px);
+}
+
+.images.d-flex-cols-3 .images__item img {
+  width: 100%;
 }
 
 .images.orientation-vertical .image {
@@ -2131,6 +2135,7 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   row-gap: 30px;
+  padding-left: 0 !important;
 }
 
 .stages-list li {
@@ -3422,6 +3427,7 @@ main {
 
 .portfolio-item--type-2 .portfolio-item__image img {
   width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -3432,6 +3438,93 @@ main {
 }
 
 .portfolio-item--type-3 .portfolio-item__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.portfolio-item--type-4 .portfolio-item__image {
+  width: 100%;
+}
+
+.portfolio-item--type-4 .portfolio-item__image img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.portfolio-item--type-5 .portfolio-item__images {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr;
+  grid-template-columns: repeat(6, 1fr);
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+  grid-row-gap: 50px;
+  grid-column-gap: 20px;
+}
+
+.portfolio-item--type-5 .portfolio-item__images > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.portfolio-item--type-5 .portfolio-item__images > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+
+.portfolio-item--type-5 .portfolio-item__images > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+}
+
+.portfolio-item--type-5 .portfolio-item__images > *:nth-child(4) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 7;
+}
+
+.portfolio-item--type-5 .portfolio-item__images > *:nth-child(5) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 9;
+}
+
+.portfolio-item--type-5 .portfolio-item__images > *:nth-child(6) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 11;
+}
+
+.portfolio-item--type-5 .portfolio-item__image {
+  width: 100%;
+}
+
+.portfolio-item--type-5 .portfolio-item__image:nth-child(1) {
+  -ms-grid-column-span: 3;
+  grid-column: span 3;
+}
+
+.portfolio-item--type-5 .portfolio-item__image:nth-child(2) {
+  -ms-grid-column-span: 3;
+  grid-column: span 3;
+}
+
+.portfolio-item--type-5 .portfolio-item__image:nth-child(3) {
+  -ms-grid-column-span: 2;
+  grid-column: span 2;
+}
+
+.portfolio-item--type-5 .portfolio-item__image:nth-child(4) {
+  -ms-grid-column-span: 2;
+  grid-column: span 2;
+}
+
+.portfolio-item--type-5 .portfolio-item__image:nth-child(5) {
+  -ms-grid-column-span: 2;
+  grid-column: span 2;
+}
+
+.portfolio-item--type-5 .portfolio-item__image img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -4643,6 +4736,14 @@ main {
     -webkit-columns: 1;
        -moz-columns: 1;
             columns: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 20px;
   }
 
   .vacancies-info__bottom .vacancies-info__block {
@@ -5188,14 +5289,19 @@ main {
     row-gap: 20px;
   }
 
-  .images.d-flex-cols-3 img {
+  .images.d-flex-cols-3 .images__item {
     max-width: 100%;
-    max-height: 420px;
-    height: 100%;
+    height: 420px;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
     margin: 0 auto;
+  }
+
+  .images.d-flex-cols-3 .images__item img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 
   .images.orientation-vertical .image {
@@ -5724,6 +5830,10 @@ main {
             flex-direction: column-reverse;
   }
 
+  .portfolio-item--type-5 .portfolio-item__images {
+    display: none;
+  }
+
   .portfolio-item__top {
     row-gap: 25px;
     -webkit-box-orient: vertical;
@@ -5840,6 +5950,14 @@ main {
     min-height: calc(100vw - 30px);
     -webkit-filter: blur(calc(50vw - 30px));
             filter: blur(calc(50vw - 30px));
+  }
+
+  .images.d-flex-cols-2 .images__item {
+    width: 100%;
+  }
+
+  .images.d-flex-cols-3 .images__item {
+    width: 100%;
   }
 
   .hero__subtitle {

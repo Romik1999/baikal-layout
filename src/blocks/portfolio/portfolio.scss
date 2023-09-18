@@ -46,17 +46,19 @@
           &__image {
             width: 100%;
 
-            &:nth-child(1){
+            &:nth-child(1) {
               max-width: 25%;
             }
-            &:nth-child(2){
+
+            &:nth-child(2) {
               max-width: 25%;
             }
-            &:nth-child(3){
+
+            &:nth-child(3) {
               max-width: 50%;
             }
 
-            & img{
+            & img {
               width: 100%;
               object-fit: cover;
             }
@@ -70,8 +72,9 @@
             max-width: 50%;
             width: 100%;
 
-            & img{
+            & img {
               width: 100%;
+              height: 100%;
               object-fit: cover;
             }
           }
@@ -84,8 +87,9 @@
             max-width: 33.33%;
             width: 100%;
 
-            & img{
+            & img {
               width: 100%;
+              height: 100%;
               object-fit: cover;
             }
           }
@@ -93,9 +97,61 @@
       }
 
       &-4 {
+        & .portfolio-item {
+          &__image {
+            width: 100%;
+
+            & img {
+              width: 100%;
+              object-fit: cover;
+            }
+          }
+        }
       }
 
       &-5 {
+        & .portfolio-item {
+          &__images {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: auto;
+            grid-row-gap: 50px;
+            grid-column-gap: 20px;
+
+            @media screen and (max-width: 769px) {
+              display: none;
+            }
+          }
+
+          &__image {
+            width: 100%;
+
+            &:nth-child(1) {
+              grid-column: span 3;
+            }
+
+            &:nth-child(2) {
+              grid-column: span 3;
+            }
+
+            &:nth-child(3) {
+              grid-column: span 2;
+            }
+
+            &:nth-child(4) {
+              grid-column: span 2;
+            }
+
+            &:nth-child(5) {
+              grid-column: span 2;
+            }
+
+            & img {
+              width: 100%;
+              object-fit: cover;
+            }
+          }
+        }
       }
     }
 
