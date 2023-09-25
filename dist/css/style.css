@@ -1900,6 +1900,7 @@ main {
   transition: 0.2s;
   cursor: pointer;
   padding: 10px;
+  height: 60px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -4425,7 +4426,9 @@ main {
 
   .file--button {
     max-width: 345px;
+    width: 100%;
     font-size: 15px;
+    height: 50px;
   }
 
   .hero {
