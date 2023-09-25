@@ -15,21 +15,21 @@
   column-gap: 10px;
   flex-wrap: wrap;
   position: relative;
-  padding-bottom: 40px;
+  //padding-bottom: 40px;
   margin-top: 0;
 
   @media screen and (max-width: 1441px) {
     font-size: 40px;
-    padding-bottom: 30px;
+    //padding-bottom: 30px;
   }
   @media screen and (max-width: 1025px) {
     font-size: 32px;
-    padding-bottom: 25px;
+    //padding-bottom: 25px;
   }
   @media screen and (max-width: 769px) {
     text-align: center;
     font-size: 25px;
-    padding-bottom: 20px;
+    //padding-bottom: 20px;
   }
   @media screen and (max-width: 340px) {
     padding-bottom: 10px;

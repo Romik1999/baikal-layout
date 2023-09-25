@@ -97,6 +97,10 @@ main {
 
   &__text {
     margin: 0;
+
+    & p {
+      margin-top: 0;
+    }
   }
 
   &__images {
