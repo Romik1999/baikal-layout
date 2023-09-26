@@ -126,6 +126,15 @@ main {
   margin-top: 0;
 }
 
+.page__text a {
+  color: inherit;
+}
+
+.page__text a:hover {
+  text-decoration: none;
+  color: #1B1B1B;
+}
+
 .page__images {
   margin: 0 auto;
   max-width: 1080px;
@@ -1858,6 +1867,7 @@ main {
   -webkit-column-gap: 20px;
      -moz-column-gap: 20px;
           column-gap: 20px;
+  cursor: pointer;
 }
 
 .file__icon {
@@ -2457,6 +2467,10 @@ main {
   line-height: 120%;
 }
 
+.production-item__text a {
+  color: inherit;
+}
+
 .production-item__images {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2803,6 +2817,10 @@ main {
 .technical-documentation p {
   margin-top: 0;
   display: block;
+}
+
+.technical-documentation a {
+  color: inherit;
 }
 
 .reviews__items {

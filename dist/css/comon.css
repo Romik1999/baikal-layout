@@ -84,6 +84,15 @@ main {
   margin-top: 0;
 }
 
+.page__text a {
+  color: inherit;
+}
+
+.page__text a:hover {
+  text-decoration: none;
+  color: #1B1B1B;
+}
+
 .page__images {
   margin: 0 auto;
   max-width: 1080px;
