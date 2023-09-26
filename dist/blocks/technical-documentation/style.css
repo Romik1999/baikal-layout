@@ -54,6 +54,10 @@
   display: block;
 }
 
+.technical-documentation a {
+  color: inherit;
+}
+
 @media screen and (max-width: 1025px) {
   .technical-documentation__blocks {
     row-gap: 60px;

@@ -134,6 +134,10 @@
   line-height: 120%;
 }
 
+.production-item__text a {
+  color: inherit;
+}
+
 .production-item__images {
   display: -webkit-box;
   display: -ms-flexbox;
